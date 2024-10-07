@@ -3,7 +3,15 @@ Latest recipes page, rough html - Gummi (done)
 
 Navigation bar, rough html - Gummi (done)
 
-index.html, rough html - Joseph
+index.html, rough html - Joseph (done)
+
+---
+
+### STYLES
+
+config (root and more configs) - gumgum
+
+grid - plis einhver gera það, eg (gummi) nn ekki 🙏
 
 ---
 
