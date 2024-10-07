@@ -1,17 +1,47 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @import '.styles/config';
- *   |         ^^^^^^^^^^^^^^^^
- *   '
- *   styles.scss 1:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import '.styles/config';\a   \2502          ^^^^^^^^^^^^^^^^\a   \2575 \a   styles.scss 1:9  root stylesheet";
+@charset "UTF-8";
+/* Setjum inn „reset“ sem fjarlægir margin og padding af öllu */
+* {
+  margin: 0;
+  padding: 0;
 }
+
+/* Reiknum stærð á öllum boxum sem border-box */
+html {
+  box-sizing: border-box;
+}
+
+/* og látum erfast á allt */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* hjálpar class sem felur sjónrænt en skjálesarar lesa */
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+:root {
+  /* Fonts */
+  --font-size-base: 16px;
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Poppins/Poppins-Medium.ttf) format("woff2");
+}
+button {
+  width: 250px;
+}
+
+/*# sourceMappingURL=styles.css.map */
