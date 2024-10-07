@@ -43,12 +43,7 @@ Temp mynd - ../myndir/cat.png
         </ul>
       </nav>
     </header>
-    <nav>
-      <ul>
-
-      </ul>
-    </nav>
-
+    
     <main>
 
     </main>
