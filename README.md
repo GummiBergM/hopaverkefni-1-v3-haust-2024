@@ -1,7 +1,10 @@
 # GAMEPLAN
 Latest recipes page, rough html - Gummi
+
 Navigation bar, rough html - Gummi
+
 index.html, rough html - Joseph
+
 
 Temp mynd - ../myndir/cat.png
 
