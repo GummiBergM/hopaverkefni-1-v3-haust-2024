@@ -6,7 +6,7 @@ index.html, rough html - Joseph
 Temp mynd - ../myndir/cat.png
 
 # LAYOUT
-## Skoðið þetta í "Code" format
+### Skoðið þetta í "Code" format
 
 <!DOCTYPE html>
 <html lang="is">
