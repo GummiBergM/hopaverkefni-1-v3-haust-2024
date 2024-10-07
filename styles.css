@@ -31,6 +31,8 @@ html {
 :root {
   /* Fonts */
   --font-size-base: 16px;
+  --font-family-poppins: "Poppins", sans-serif;
+  --font-family-playfair: "Playfair Display", serif;
 }
 
 @font-face {
@@ -38,8 +40,29 @@ html {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(../fonts/Poppins/Poppins-Medium.ttf) format("woff2");
+  src: url(../fonts/Poppins/Poppins-Light.ttf) format("woff2");
 }
+@font-face {
+  font-family: "Playfair Display";
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf) format("woff2");
+}
+h1,
+h2,
+h3 {
+  font-family: var(--font-family-playfair);
+}
+
+html,
+input,
+button,
+select,
+textarea {
+  font-family: var(--font-family-poppins);
+}
+
 button {
   width: 250px;
 }
