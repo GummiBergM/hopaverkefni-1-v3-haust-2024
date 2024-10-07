@@ -1,7 +1,7 @@
 # GAMEPLAN
-Latest recipes page, rough html - Gummi
+Latest recipes page, rough html - Gummi (done)
 
-Navigation bar, rough html - Gummi
+Navigation bar, rough html - Gummi (done)
 
 index.html, rough html - Joseph
 
