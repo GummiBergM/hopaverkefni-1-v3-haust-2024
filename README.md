@@ -1,5 +1,5 @@
 # GAMEPLAN
-Latest recipes page, rough html - Gummi /sidur/recipes.html
+Latest recipes page, rough html - Gummi '/sidur/recipes.html'
 Navigation bar, rough html - Gummi
 index.html, rough html - Joseph
 
