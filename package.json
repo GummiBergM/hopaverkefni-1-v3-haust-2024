@@ -1,0 +1,11 @@
+{
+  "name": "hopaverkefni-1-v3-haust-2024",
+  "version": "1.0.0",
+  "description": "hopaverkefni",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
