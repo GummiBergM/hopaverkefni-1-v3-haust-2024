@@ -1,11 +1,12 @@
 # GAMEPLAN
-Latest recipes page, rough html - Gummi '/sidur/recipes.html'
+Latest recipes page, rough html - Gummi
 Navigation bar, rough html - Gummi
 index.html, rough html - Joseph
 
 Temp mynd - ../myndir/cat.png
 
 # LAYOUT
+-# Skoðið þetta í "Code" format
 
 <!DOCTYPE html>
 <html lang="is">
