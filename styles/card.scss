@@ -1,0 +1,21 @@
+.card {
+    background-color: white;
+    margin: var(--spacing);
+    max-width: 500px;
+    
+    img {
+        height: 206px;
+        max-width: 100vh;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .infobox {
+        padding: var(--spacing);
+
+        div {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

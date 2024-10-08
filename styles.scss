@@ -1,2 +1,8 @@
-@import '../Hópaverkefni\ 1\ v3/styles/config';
-@import '../Hópaverkefni\ 1\ v3/styles/button';
+@import './styles/config';
+@import './styles/button';
+@import './styles/card';
+@import './styles/text';
+
+main {
+    background-color: #F6F6F6;
+}
