@@ -4,11 +4,12 @@
   "description": "hopaverkefni",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass" : "sass styles.scss styles.css"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^3.0.3"
+    "browser-sync": "^3.0.3",
+    "sass": "^1.79.4"
   }
 }

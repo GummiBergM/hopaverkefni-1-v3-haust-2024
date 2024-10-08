@@ -3,7 +3,17 @@ Latest recipes page, rough html - Gummi (done)
 
 Navigation bar, rough html - Gummi (done)
 
-index.html, rough html - Joseph
+index.html, rough html - Joseph (done)
+
+Downloada myndir - Joseph (WIP)
+
+---
+
+### STYLES
+
+config (root and more configs) - gumgum
+
+grid - plis einhver gera það, eg (gummi) nn ekki 🙏
 
 ---
 
@@ -35,12 +45,7 @@ Temp mynd - ../myndir/cat.png
         </ul>
       </nav>
     </header>
-    <nav>
-      <ul>
-
-      </ul>
-    </nav>
-
+    
     <main>
 
     </main>
