@@ -5,7 +5,7 @@ Navigation bar, rough html - Gummi (done)
 
 index.html, rough html - Joseph (done)
 
-Downloada myndir - Joseph (WIP)
+Myndir (komin í myndir folder, ætla að setja í kóðan) - Joseph (WIP)
 
 ---
 
