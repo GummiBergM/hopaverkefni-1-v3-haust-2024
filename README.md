@@ -13,7 +13,7 @@ Myndir (komin í myndir folder, ætla að setja í kóðan) - Joseph (WIP)
 
 config (root and more configs) - gumgum
 
-grid - gumgum
+grid - joe boy
 
 ---
 
