@@ -5,6 +5,8 @@ Navigation bar, rough html - Gummi (done)
 
 index.html, rough html - Joseph (done)
 
+Downloada myndir - Joseph (WIP)
+
 ---
 
 ### STYLES
