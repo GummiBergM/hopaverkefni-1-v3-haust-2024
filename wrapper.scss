@@ -1,9 +1,10 @@
 .wrapper {
   display: grid;
   grid-template-rows: auto;
+  /*6 columns, mér sýnist okkur þurfa bara 3 + offset en held samt það sé góð hugmynd að hafa 6*/
   grid-template-columns: repeat(6, 1fr);
 
-  /* grid items eru miðjuð */
+  /* grid items eru miðjuð (copied this from synilausn)*/
   justify-items: center;
   gap: 30px;
   width: 100%;
