@@ -13,7 +13,7 @@ Myndir (komin í myndir folder, ætla að setja í kóðan) - Joseph (WIP)
 
 config (root and more configs) - gumgum
 
-grid - plis einhver gera það, eg (gummi) nn ekki 🙏
+grid + wrapper - joseph
 
 ---
 
