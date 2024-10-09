@@ -29,10 +29,43 @@ html {
 }
 
 :root {
-  /* Fonts */
   --font-size-base: 16px;
+  --font-size-headings: 1.5rem;
+  /* Grunn bilið okkar er 1rem == 16px */
+  --spacing: 1rem;
+  /* Bil á milli „stærri“ eininga (header, efnisbox, footer) */
+  --vertical-space: calc(var(--gutter) * 1);
+  --vertical-space-large: calc(var(--gutter) * 1.5);
+  /* Hámarks og lágmarks breidd á efni */
+  --max-width: 1200px;
+  --min-width-image: 200px;
+  --max-width-image: 300px;
+  --max-width-footer-section: 250px;
   --font-family-poppins: "Poppins", sans-serif;
   --font-family-playfair: "Playfair Display", serif;
+}
+
+button {
+  width: 250px;
+}
+
+.card {
+  background-color: white;
+  margin: var(--spacing);
+  max-width: 500px;
+}
+.card img {
+  height: 206px;
+  max-width: 100vh;
+  object-fit: cover;
+  width: 100%;
+}
+.card .infobox {
+  padding: var(--spacing);
+}
+.card .infobox div {
+  display: flex;
+  justify-content: space-between;
 }
 
 @font-face {
@@ -55,6 +88,21 @@ h3 {
   font-family: var(--font-family-playfair);
 }
 
+h2 {
+  font-size: 18px;
+}
+
+.month {
+  font-size: 12px;
+  color: #9B9B9B;
+}
+
+a {
+  font-size: 14px;
+  color: #E3CDB1;
+  text-decoration: none;
+}
+
 html,
 input,
 button,
@@ -63,8 +111,8 @@ textarea {
   font-family: var(--font-family-poppins);
 }
 
-button {
-  width: 250px;
+main {
+  background-color: #F6F6F6;
 }
 
 /* "reset" sem fjarlægir default margin og padding af öllu */

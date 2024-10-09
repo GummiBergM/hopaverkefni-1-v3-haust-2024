@@ -28,40 +28,19 @@ html {
 }
 
 :root {
-  /* Fonts */
   --font-size-base: 16px;
+  --font-size-headings: 1.5rem;
+  /* Grunn bilið okkar er 1rem == 16px */
+  --spacing: 1rem;
+  /* Bil á milli „stærri“ eininga (header, efnisbox, footer) */
+  --vertical-space: calc(var(--gutter) * 1);
+  --vertical-space-large: calc(var(--gutter) * 1.5);
+  /* Hámarks og lágmarks breidd á efni */
+  --max-width: 1200px;
+  --min-width-image: 200px;
+  --max-width-image: 300px;
+  --max-width-footer-section: 250px;
 
   --font-family-poppins: "Poppins", sans-serif;
   --font-family-playfair: "Playfair Display", serif;
-}
-
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(../fonts/Poppins/Poppins-Light.ttf) format("woff2");
-}
-
-@font-face {
-  font-family: "Playfair Display";
-  font-style: bold;
-  font-weight: 700;
-  font-display: swap;
-  src: url(../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf)
-    format("woff2");
-}
-
-h1,
-h2,
-h3 {
-  font-family: var(--font-family-playfair);
-}
-
-html,
-input,
-button,
-select,
-textarea {
-  font-family: var(--font-family-poppins);
 }

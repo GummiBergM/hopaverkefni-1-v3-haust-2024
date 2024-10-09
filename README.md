@@ -5,7 +5,9 @@ Navigation bar, rough html - Gummi (done)
 
 index.html, rough html - Joseph (done)
 
-Myndir (komin í myndir folder, ætla að setja í kóðan) - Joseph (WIP)
+Myndir folder and images on homepage and recipes - Joseph (done) - if anything is missing let Joseph know... or do it yourself heheh
+
+functional links - Joseph (WIP)
 
 ---
 
@@ -13,7 +15,7 @@ Myndir (komin í myndir folder, ætla að setja í kóðan) - Joseph (WIP)
 
 config (root and more configs) - gumgum
 
-grid - plis einhver gera það, eg (gummi) nn ekki 🙏
+grid + wrapper - joseph
 
 ---
 
