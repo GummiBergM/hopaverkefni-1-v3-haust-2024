@@ -7,7 +7,7 @@ index.html, rough html - Joseph (done)
 
 Myndir folder and images on homepage and recipes - Joseph (done) - if anything is missing let Joseph know... or do it yourself heheh
 
-functional links - Joseph (WIP)
+Nav links and fix broken links - Joseph (done)
 
 ---
 
