@@ -43,4 +43,12 @@ html {
 
   --font-family-poppins: "Poppins", sans-serif;
   --font-family-playfair: "Playfair Display", serif;
+
+  /* Grid stillingar */
+  --columns: 12;
+  --gutter: 30px;
+  --offset: 20px;
+
+  /* Breidd á efni með offset */
+  --width-offset: calc(100% - (2 * var(--offset)));
 }
