@@ -43,3 +43,15 @@
   textarea {
     font-family: var(--font-family-poppins);
   }
+
+  @media (min-width: 500px) {
+    .phone {
+      display: none;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .desktop {
+      display: none;
+    }
+  }

@@ -43,10 +43,34 @@ html {
   --max-width-footer-section: 250px;
   --font-family-poppins: "Poppins", sans-serif;
   --font-family-playfair: "Playfair Display", serif;
+  /* Grid stillingar */
+  --columns: 12;
+  --gutter: 30px;
+  --offset: 20px;
+  /* Breidd á efni með offset */
+  --width-offset: calc(100% - (2 * var(--offset)));
 }
 
 button {
   width: 250px;
+}
+
+/* "reset" sem fjarlægir default margin og padding af öllu */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: auto;
+  /*6 columns, mér sýnist okkur þurfa bara 3 + offset en held samt það sé góð hugmynd að hafa 6*/
+  grid-template-columns: repeat(6, 1fr);
+  /* grid items eru miðjuð (copied this from synilausn)*/
+  justify-items: center;
+  gap: 30px;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .card {
@@ -111,25 +135,18 @@ textarea {
   font-family: var(--font-family-poppins);
 }
 
+@media (min-width: 500px) {
+  .phone {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .desktop {
+    display: none;
+  }
+}
 main {
   background-color: #F6F6F6;
-}
-
-/* "reset" sem fjarlægir default margin og padding af öllu */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.wrapper {
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: repeat(6, 1fr);
-  /* grid items eru miðjuð */
-  justify-items: center;
-  gap: 30px;
-  width: 100%;
-  min-height: 100vh;
 }
 
 /*# sourceMappingURL=styles.css.map */
