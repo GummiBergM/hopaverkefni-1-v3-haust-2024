@@ -42,6 +42,7 @@ html {
   --max-width-footer-section: 250px;
 
   --font-family-poppins: "Poppins", sans-serif;
+  --font-family-poppins-bold: "Poppins-Bold", sans-serif;
   --font-family-playfair: "Playfair Display", serif;
 
   /* Grid stillingar */
@@ -51,4 +52,15 @@ html {
 
   /* Breidd á efni með offset */
   --width-offset: calc(100% - (2 * var(--offset)));
+
+  /* Transitions */
+  --transition-time-short: 300ms;
+  --transition-time-long: 600ms;
+  --transition-timing-function: ease-in-out;
+
+  /* Litir */
+  --color-beige: #E3CDB1;
+  --color-grey: #F6F6F6;
+  --color-dark-grey: #D0D0D0;
+
 }

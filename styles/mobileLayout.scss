@@ -1,0 +1,13 @@
+/**Index**/
+
+@media (min-width: 700px) {
+  .phone {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .desktop {
+    display: none;
+  }
+}

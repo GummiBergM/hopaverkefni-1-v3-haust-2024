@@ -42,6 +42,7 @@ html {
   --max-width-image: 300px;
   --max-width-footer-section: 250px;
   --font-family-poppins: "Poppins", sans-serif;
+  --font-family-poppins-bold: "Poppins-Bold", sans-serif;
   --font-family-playfair: "Playfair Display", serif;
   /* Grid stillingar */
   --columns: 12;
@@ -49,10 +50,27 @@ html {
   --offset: 20px;
   /* Breidd á efni með offset */
   --width-offset: calc(100% - (2 * var(--offset)));
+  /* Transitions */
+  --transition-time-short: 300ms;
+  --transition-time-long: 600ms;
+  --transition-timing-function: ease-in-out;
+  /* Litir */
+  --color-beige: #E3CDB1;
+  --color-grey: #F6F6F6;
+  --color-dark-grey: #D0D0D0;
 }
 
-button {
-  width: 250px;
+.button {
+  display: inline-block;
+  text-align: center;
+  border: #E3CDB1 1px solid;
+  padding: 0.5rem 4rem;
+  transition: background-color var(--transition-time-short) ease, color var(--transition-time-short) ease;
+}
+
+.button:hover {
+  background-color: var(--color-beige);
+  color: var(--color-grey);
 }
 
 /* "reset" sem fjarlægir default margin og padding af öllu */
@@ -61,18 +79,19 @@ button {
   padding: 0;
 }
 
-.wrapper {
-  display: grid;
-  grid-template-rows: auto;
-  /*6 columns, mér sýnist okkur þurfa bara 3 + offset en held samt það sé góð hugmynd að hafa 6*/
-  grid-template-columns: repeat(6, 1fr);
-  /* grid items eru miðjuð (copied this from synilausn)*/
-  justify-items: center;
-  gap: 30px;
-  width: 100%;
-  min-height: 100vh;
+@media (min-width: 700px) {
+  .wrapper {
+    display: grid;
+    grid-template-rows: auto;
+    /*6 columns, mér sýnist okkur þurfa bara 3 + offset en held samt það sé góð hugmynd að hafa 6*/
+    grid-template-columns: repeat(6, 1fr);
+    /* grid items eru miðjuð (copied this from synilausn)*/
+    justify-items: center;
+    gap: 30px;
+    width: 100%;
+    min-height: 100vh;
+  }
 }
-
 .card {
   background-color: white;
   margin: var(--spacing);
@@ -92,12 +111,23 @@ button {
   justify-content: space-between;
 }
 
+.cards {
+  background: linear-gradient(to bottom, white 10%, var(--color-grey) 10%);
+}
+
 @font-face {
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-display: swap;
   src: url(../fonts/Poppins/Poppins-Light.ttf) format("woff2");
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  font-style: bold;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/Poppins/Poppins-Regular.ttf) format("woff2");
 }
 @font-face {
   font-family: "Playfair Display";
@@ -118,12 +148,12 @@ h2 {
 
 .month {
   font-size: 12px;
-  color: #9B9B9B;
+  color: #9b9b9b;
 }
 
 a {
   font-size: 14px;
-  color: #E3CDB1;
+  color: #e3cdb1;
   text-decoration: none;
 }
 
@@ -135,18 +165,77 @@ textarea {
   font-family: var(--font-family-poppins);
 }
 
-@media (min-width: 500px) {
+/**Index**/
+@media (min-width: 700px) {
   .phone {
     display: none;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .desktop {
     display: none;
   }
 }
+.intro {
+  background-color: var(--color-grey);
+  text-align: center;
+  background-image: url("../myndir/pumpkinPie.png");
+  background-size: 650px;
+  background-position: 0px -100px;
+  height: 500px;
+  background-repeat: no-repeat;
+  /**
+  img {
+      object-fit: cover;
+      max-width: 100vh;
+      width: 100%;
+
+      position: absolute;
+      top: 10px;
+      left: 50px;
+  }
+  **/
+}
+.intro p, .intro a {
+  font-family: var(--font-family-poppins-bold);
+}
+.intro h1 {
+  padding-top: 0.2rem;
+  padding-bottom: 1rem;
+}
+.intro .subtitle {
+  padding-top: 5rem;
+  color: #E3CDB1;
+  font-size: 12px;
+}
+.intro img {
+  display: none;
+}
+
+.title {
+  text-align: center;
+  background-color: white;
+  padding-top: 2rem;
+}
+.title p {
+  color: var(--color-beige);
+  font-family: var(--font-family-poppins-bold);
+  font-size: 12px;
+}
+.title .titleflex {
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem;
+}
+.title .titleflex h2 {
+  color: var(--color-dark-grey);
+}
+.title .titleflex .secondaryTitle {
+  color: black;
+}
+
 main {
-  background-color: #F6F6F6;
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
