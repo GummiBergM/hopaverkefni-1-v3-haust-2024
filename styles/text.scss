@@ -1,57 +1,53 @@
 @font-face {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(../fonts/Poppins/Poppins-Light.ttf) format("woff2");
-  }
-  
-  @font-face {
-    font-family: "Playfair Display";
-    font-style: bold;
-    font-weight: 700;
-    font-display: swap;
-    src: url(../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf)
-      format("woff2");
-  }
-  
-  h1,
-  h2,
-  h3 {
-    font-family: var(--font-family-playfair);
-  }
-  
-  h2 {
-    font-size: 18px;
-  }
-  
-  .month {
-    font-size: 12px;
-    color: #9B9B9B;
-  }
-  
-  a {
-    font-size: 14px;
-    color: #E3CDB1;
-    text-decoration: none;
-  }
-  
-  html,
-  input,
-  button,
-  select,
-  textarea {
-    font-family: var(--font-family-poppins);
-  }
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../fonts/Poppins/Poppins-Light.ttf) format("woff2");
+}
 
-  @media (min-width: 500px) {
-    .phone {
-      display: none;
-    }
-  }
+@font-face {
+  font-family: "Poppins-Bold";
+  font-style: bold;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/Poppins/Poppins-Regular.ttf) format("woff2");
+}
 
-  @media (max-width: 500px) {
-    .desktop {
-      display: none;
-    }
-  }
+@font-face {
+  font-family: "Playfair Display";
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf)
+    format("woff2");
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-family-playfair);
+}
+
+h2 {
+  font-size: 18px;
+}
+
+.month {
+  font-size: 12px;
+  color: #9b9b9b;
+}
+
+a {
+  font-size: 14px;
+  color: #e3cdb1;
+  text-decoration: none;
+}
+
+html,
+input,
+button,
+select,
+textarea {
+  font-family: var(--font-family-poppins);
+}

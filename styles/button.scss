@@ -1,3 +1,13 @@
-button {
-    width: 250px;
+.button {
+    display: inline-block;
+    text-align: center;
+    border: #E3CDB1 1px solid;
+    padding: 0.5rem 4rem;
+    transition: background-color var(--transition-time-short) ease, color var(--transition-time-short) ease;
 }
+
+.button:hover {
+    background-color: var(--color-beige);
+    color: var(--color-grey);
+}
+
