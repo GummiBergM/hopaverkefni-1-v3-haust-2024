@@ -9,6 +9,8 @@
 
     p, a {
         font-family: var(--font-family-poppins-bold);
+        text-decoration: none;
+        color: var(--color-beige);
     }
 
     h1{
@@ -18,7 +20,6 @@
 
     .subtitle {
         padding-top: 5rem;
-        color: #E3CDB1;
         font-size: 12px;
     }
 
