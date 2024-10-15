@@ -56,8 +56,9 @@ html {
   --transition-timing-function: ease-in-out;
   /* Litir */
   --color-beige: #E3CDB1;
+  --color-faded-beige: #F7F1EB;
   --color-grey: #F6F6F6;
-  --color-dark-grey: #D0D0D0;
+  --color-dark-grey: #5E5B69;
 }
 
 .button {
@@ -286,6 +287,33 @@ header nav .cross {
   display: none;
   max-height: 13px;
   cursor: pointer;
+}
+
+.book {
+  text-align: center;
+  height: 543px;
+  background: linear-gradient(to bottom, var(--color-faded-beige) 75%, white 75%);
+  padding-left: var(--spacing);
+  padding-right: var(--spacing);
+}
+.book a {
+  color: var(--color-beige);
+  text-decoration: none;
+}
+.book p {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  color: var(--color-dark-grey);
+  font-family: var(--font-family-poppins);
+}
+.book h2 {
+  font-size: 32px;
+  padding-top: 4rem;
+}
+.book img {
+  padding-top: 3rem;
+  height: auto;
+  width: 205px;
 }
 
 main {
