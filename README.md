@@ -17,6 +17,8 @@ config (root and more configs) - gumgum
 
 grid + wrapper - joseph
 
+Nav bar - gummsi
+
 ---
 
 Temp mynd - ../myndir/cat.png
