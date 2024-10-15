@@ -9,6 +9,10 @@
     <meta property="og:title" content="yum&yum" />
     <meta property="og:description" content="vantar description" />
     <meta property="og:image" content="vantar mynd" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
   </head>
 
   <body>
@@ -16,11 +20,22 @@
       <!--Basic nav, keep in mind the mobile version of this-->
       <header>
         <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="sidur/recipes.html">Recipes</a></li>
-            <li><a href="sidur/videos.html">Videos</a></li>
-            <li><a href="sidur/about.html">About us</a></li>
+          <div>
+            <img src="./myndir/yumYumLogo.png" alt="" />
+            <img
+              class="hamburger-icon"
+              id="hamburger"
+              src="./icons/burger-menu.png"
+              onclick="toggleMenu()"
+            />
+            <img class="cross" id="cross" " src="./icons/cross.png"
+            onclick="toggleMenu()" />
+          </div>
+          <ul class="menu" id="menu">
+            <li class="hamburger"><a href="index.html">Home</a></li>
+            <li class="hamburger"><a href="sidur/recipes.html">Recipes</a></li>
+            <li class="hamburger"><a href="sidur/videos.html">Videos</a></li>
+            <li class="hamburger"><a href="sidur/about.html">About us</a></li>
           </ul>
         </nav>
       </header>
@@ -139,5 +154,6 @@
       <!--add footer later-->
       <footer></footer>
     </div>
+    <script src="./scripts/scripts.js"></script>
   </body>
 </html>

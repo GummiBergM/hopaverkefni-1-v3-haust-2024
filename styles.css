@@ -151,7 +151,13 @@ h2 {
   color: #9b9b9b;
 }
 
-a {
+.desktop {
+  font-size: 14px;
+  color: #e3cdb1;
+  text-decoration: none;
+}
+
+.phone {
   font-size: 14px;
   color: #e3cdb1;
   text-decoration: none;
@@ -198,6 +204,8 @@ textarea {
 }
 .intro p, .intro a {
   font-family: var(--font-family-poppins-bold);
+  text-decoration: none;
+  color: var(--color-beige);
 }
 .intro h1 {
   padding-top: 0.2rem;
@@ -205,7 +213,6 @@ textarea {
 }
 .intro .subtitle {
   padding-top: 5rem;
-  color: #E3CDB1;
   font-size: 12px;
 }
 .intro img {
@@ -232,6 +239,53 @@ textarea {
 }
 .title .titleflex .secondaryTitle {
   color: black;
+}
+
+header {
+  background-color: white;
+  z-index: 1000;
+  top: 0;
+  position: sticky;
+}
+header nav {
+  width: 100%;
+}
+header nav div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav img {
+  max-width: 90px;
+  margin: var(--spacing);
+}
+header nav .menu {
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  background-color: var(--color-grey);
+  width: 100%;
+  text-align: center;
+  height: 100vh;
+}
+header nav .hamburger {
+  border-bottom: 1px solid var(--color-beige);
+  padding: var(--spacing);
+}
+header nav .hamburger a {
+  font-size: 60px;
+  font-family: var(--font-family-playfair);
+  color: black;
+  text-decoration: none;
+}
+header nav .hamburger-icon {
+  max-height: 13px;
+  cursor: pointer;
+}
+header nav .cross {
+  display: none;
+  max-height: 13px;
+  cursor: pointer;
 }
 
 main {
