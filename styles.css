@@ -64,14 +64,21 @@ html {
 .button {
   display: inline-block;
   text-align: center;
-  border: #E3CDB1 1px solid;
+  border: var(--color-beige) 1px solid;
   padding: 0.5rem 4rem;
   transition: background-color var(--transition-time-short) ease, color var(--transition-time-short) ease;
+  text-decoration: none;
+  color: var(--color-beige);
 }
 
 .button:hover {
   background-color: var(--color-beige);
   color: var(--color-grey);
+}
+
+.bottom-button {
+  padding: 4rem 0;
+  text-align: center;
 }
 
 /* "reset" sem fjarlægir default margin og padding af öllu */
@@ -95,7 +102,9 @@ html {
 }
 .card {
   background-color: white;
-  margin: var(--spacing);
+  margin-top: var(--spacing);
+  margin-right: var(--spacing);
+  margin-left: var(--spacing);
   max-width: 500px;
 }
 .card img {
@@ -279,14 +288,18 @@ header nav .hamburger a {
   color: black;
   text-decoration: none;
 }
-header nav .hamburger-icon {
+header nav .hamburger-icon, header nav .cross-icon {
   max-height: 13px;
   cursor: pointer;
+  opacity: 1;
+  visibility: visible;
+  position: absolute;
+  right: 0px;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
-header nav .cross {
-  display: none;
-  max-height: 13px;
-  cursor: pointer;
+header nav .cross-icon {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .book {
