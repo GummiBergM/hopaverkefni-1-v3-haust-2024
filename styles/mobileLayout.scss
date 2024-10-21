@@ -1,13 +1,17 @@
 /**Index**/
 
-@media (min-width: 700px) {
+@media (max-width: 700px) {
   .phone {
     display: none;
   }
-}
+  .intro {
+    height: 500px;
+    text-align: center;
+    background-size: 650px;
+    background-position: 0px -100px;
+  }
 
-@media (max-width: 700px) {
-  .desktop {
-    display: none;
+  .subtitle {
+    font-size: 12px;
   }
 }
