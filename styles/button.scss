@@ -1,9 +1,11 @@
 .button {
     display: inline-block;
     text-align: center;
-    border: #E3CDB1 1px solid;
+    border: var(--color-beige) 1px solid;
     padding: 0.5rem 4rem;
     transition: background-color var(--transition-time-short) ease, color var(--transition-time-short) ease;
+    text-decoration: none;
+    color: var(--color-beige);
 }
 
 .button:hover {
@@ -11,3 +13,7 @@
     color: var(--color-grey);
 }
 
+.bottom-button {
+    padding: 4rem 0;
+    text-align: center;
+}

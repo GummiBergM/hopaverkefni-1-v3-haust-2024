@@ -1,7 +1,7 @@
 @import './styles/config';
 @import './styles/button';
-@import './styles/reset.scss';
-@import './styles/wrapper.scss';
+@import './styles/reset';
+@import './styles/wrapper';
 @import './styles/card';
 @import './styles/cards';
 @import './styles/text';
@@ -9,9 +9,10 @@
 @import './styles/intro';
 @import './styles/main';
 @import './styles/title';
+@import './styles/level';
 @import './styles/nav';
 @import './styles/footer';
-
+@import './styles/book';
 main {
     width: 100%;
 }

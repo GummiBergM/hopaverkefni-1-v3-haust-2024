@@ -28,14 +28,18 @@
               src="./icons/burger-menu.png"
               onclick="toggleMenu()"
             />
-            <img class="cross" id="cross" " src="./icons/cross.png"
-            onclick="toggleMenu()" />
+            <img
+              class="cross-icon"
+              id="cross"
+              src="./icons/cross.png"
+              onclick="toggleMenu()"
+            />
           </div>
           <ul class="menu" id="menu">
             <li class="hamburger"><a href="index.html">Home</a></li>
             <li class="hamburger"><a href="sidur/recipes.html">Recipes</a></li>
             <li class="hamburger"><a href="sidur/videos.html">Videos</a></li>
-            <li class="hamburger"><a href="sidur/about.html">About us</a></li>
+            <li class="hamburger"><a href="#">About us</a></li>
           </ul>
         </nav>
       </header>
@@ -50,7 +54,9 @@
               custard filling. The pumpkin is a symbol of harvest time, and
               pumpkin pie is often eaten during the fall and early winter.
             </p>
-            <a class="button" href="#">See more</a>
+            <a class="button" href="/sidur/recipes/pumpkinPie-recipe.html"
+              >See more</a
+            >
             <img src="./myndir/pumpkinPie.png" />
             <img class="shadow" src="./myndir/shadow.png" alt="" />
           </div>
@@ -66,7 +72,6 @@
             </div>
           </div>
           <section class="cards">
-            <!--Pæling hér, does each recipe get its own website? Or should they all lead to one page? For now they bring you back to the top. That's what the # is for-->
             <div class="card">
               <img src="./myndir/sushiRolls.png" />
               <div class="infobox">
@@ -133,18 +138,28 @@
                 </div>
               </div>
             </div>
+            <div class="bottom-button">
+              <a class="button" href="#">See more</a>
+            </div>
           </section>
-          <section>
+          <section class="book">
             <div>
-              <p>Announcement time</p>
+              <p class="desktop">Announcement time</p>
               <!--Book website or something else?-->
-              <h2>Our book is out</h2>
-              <p>
+              <h2>Our book is out!</h2>
+              <p class="desktop">
                 Pumpkin pie is a sweet dessert pie with a spiced, pumpkin-based
                 custard filling. The pumpkin is a symbol of harvest time, and
                 pumpkin pie is often eaten during the fall and early winter.
               </p>
-              <a href="#">See more</a>
+              <p class="phone">
+                As you pour the first glass of your favorite Chianti or
+                Chardonnay
+              </p>
+              <div class="button">
+                <a class="phone" href="#">Go to store</a>
+                <a class="desktop" href="#">See more</a>
+              </div>
               <!--Myndin of stór, temp með 300px-->
               <img src="./myndir/yamBook.png" width="300px" />
             </div>

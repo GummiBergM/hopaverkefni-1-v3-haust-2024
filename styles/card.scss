@@ -1,6 +1,8 @@
 .card {
     background-color: white;
-    margin: var(--spacing);
+    margin-top: var(--spacing);
+    margin-right: var(--spacing);
+    margin-left: var(--spacing);
     max-width: 500px;
     
     img {
