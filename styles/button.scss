@@ -1,16 +1,24 @@
 .button {
-    display: inline-block;
     text-align: center;
     border: var(--color-beige) 1px solid;
     padding: 0.5rem 4rem;
     transition: background-color var(--transition-time-short) ease, color var(--transition-time-short) ease;
     text-decoration: none;
     color: var(--color-beige);
+
+    a {
+        color: var(--color-beige);
+        text-decoration: none;
+    }
 }
 
 .button:hover {
     background-color: var(--color-beige);
-    color: var(--color-grey);
+    color: var(--color-light-grey);
+
+    a {
+        color: var(--color-light-grey);
+    }
 }
 
 .bottom-button {

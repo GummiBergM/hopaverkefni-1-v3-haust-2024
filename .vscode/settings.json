@@ -1,3 +1,6 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "workbench.colorTheme": "Xcode Default (Light)",
+    "workbench.preferredDarkColorTheme": "Xcode Default (Dark)",
+    "window.autoDetectColorScheme": true
 }

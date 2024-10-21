@@ -1,16 +1,15 @@
 .intro {
-    background-color: var(--color-grey);
+    background-color: var(--color-light-grey);
     text-align: center;
     background-image: url('../myndir/pumpkinPie.png');
     background-size: 650px;
     background-position: 0px -100px;
     height: 500px;
     background-repeat: no-repeat;
+    padding-top: 5rem;
 
     p, a {
         font-family: var(--font-family-poppins-bold);
-        text-decoration: none;
-        color: var(--color-beige);
     }
 
     h1{
@@ -19,8 +18,8 @@
     }
 
     .subtitle {
-        padding-top: 5rem;
         font-size: 12px;
+        color: var(--color-beige);
     }
 
     img {
