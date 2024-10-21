@@ -33,7 +33,6 @@ html {
   --font-size-headings: 1.5rem;
   /* Grunn bilið okkar er 1rem == 16px */
   --spacing: 1rem;
-  --spacing-double: 2rem;
   /* Bil á milli „stærri“ eininga (header, efnisbox, footer) */
   --vertical-space: calc(var(--gutter) * 1);
   --vertical-space-large: calc(var(--gutter) * 1.5);
@@ -56,20 +55,14 @@ html {
   --transition-time-long: 600ms;
   --transition-timing-function: ease-in-out;
   /* Litir */
-  --color-beige: #e3cdb1;
+  --color-beige: #E3CDB1;
   --color-faded-beige: #F7F1EB;
+  --color-grey: #F6F6F6;
   --color-dark-grey: #5E5B69;
-  --color-grey: #D0D0D0;
-  --color-light-grey: #F6F6F6;
-  --color-even-lighter-grey: #FAFAFA;
-}
-
-a {
-  text-decoration: none;
-  color: var(--color-beige);
 }
 
 .button {
+  display: inline-block;
   text-align: center;
   border: var(--color-beige) 1px solid;
   padding: 0.5rem 4rem;
@@ -77,17 +70,10 @@ a {
   text-decoration: none;
   color: var(--color-beige);
 }
-.button a {
-  color: var(--color-beige);
-  text-decoration: none;
-}
 
 .button:hover {
   background-color: var(--color-beige);
-  color: var(--color-light-grey);
-}
-.button:hover a {
-  color: var(--color-light-grey);
+  color: var(--color-grey);
 }
 
 .bottom-button {
@@ -101,8 +87,19 @@ a {
   padding: 0;
 }
 
-main {
-  display: grid;
+@media (min-width: 700px) {
+  .wrapper {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(12, 1fr);
+    justify-items: center;
+    gap: 30px;
+    width: 100%;
+    min-height: 100vh;
+  }
+}
+.wrapper > * {
+  grid-column: span 12;
 }
 
 .card {
@@ -117,7 +114,6 @@ main {
   max-width: 100vh;
   object-fit: cover;
   width: 100%;
-  background-color: var(--color-grey);
 }
 .card .infobox {
   padding: var(--spacing);
@@ -127,44 +123,8 @@ main {
   justify-content: space-between;
 }
 
-.still-video {
-  position: relative;
-  width: 100%;
-  max-width: 100%;
-  cursor: pointer;
-}
-
-.still-video img {
-  display: block;
-  width: 100%;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(227, 205, 177, 0.7);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-.overlay img {
-  background-color: transparent;
-  position: absolute;
-  top: 50%;
-  left: 51%;
-  transform: translate(-50%, -50%);
-  width: 30px;
-  height: auto;
-}
-
-.still-video:hover .overlay {
-  opacity: 1;
-}
-
 .cards {
-  background: linear-gradient(to bottom, white 10%, var(--color-light-grey) 10%);
+  background: linear-gradient(to bottom, white 10%, var(--color-grey) 10%);
 }
 
 @font-face {
@@ -224,25 +184,28 @@ textarea {
 }
 
 /**Index**/
-@media (min-width: 700px) {
+@media (max-width: 700px) {
   .phone {
     display: none;
   }
+  .intro {
+    text-align: center;
+  }
 }
+/*
 @media (max-width: 700px) {
   .desktop {
     display: none;
   }
 }
+*/
 .intro {
-  background-color: var(--color-light-grey);
-  text-align: center;
+  background-color: var(--color-grey);
   background-image: url("../myndir/pumpkinPie.png");
   background-size: 650px;
   background-position: 0px -100px;
   height: 500px;
   background-repeat: no-repeat;
-  padding-top: 5rem;
   /**
   img {
       object-fit: cover;
@@ -257,14 +220,16 @@ textarea {
 }
 .intro p, .intro a {
   font-family: var(--font-family-poppins-bold);
+  text-decoration: none;
+  color: var(--color-beige);
 }
 .intro h1 {
   padding-top: 0.2rem;
   padding-bottom: 1rem;
 }
 .intro .subtitle {
+  padding-top: 5rem;
   font-size: 12px;
-  color: var(--color-beige);
 }
 .intro img {
   display: none;
@@ -274,6 +239,24 @@ textarea {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.ingredients li {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ingredients-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .title {
@@ -292,38 +275,15 @@ textarea {
   gap: 0.3rem;
 }
 .title .titleflex h2 {
-  color: var(--color-grey);
+  color: var(--color-dark-grey);
 }
 .title .titleflex .secondaryTitle {
   color: black;
 }
 
 .level {
-  padding: 0 var(--spacing-double);
   display: flex;
-  gap: 1rem;
-  padding-top: 1rem;
-}
-.level img {
-  display: block;
-  width: 24px;
-}
-.level .level-text {
-  display: flex;
-  gap: 4px;
-}
-.level .level-text p {
-  color: var(--color-dark-grey);
-}
-.level .level-text .level-black {
-  color: black;
-}
-
-.recipe-subtitle {
-  color: var(--color-dark-grey);
-  font-size: 15px;
-  text-align: left;
-  padding: 0 var(--spacing-double);
+  flex-direction: row;
 }
 
 header {
@@ -348,13 +308,13 @@ header nav .menu {
   display: none;
   flex-direction: column;
   list-style: none;
-  background-color: var(--color-even-lighter-grey);
+  background-color: var(--color-grey);
   width: 100%;
   text-align: center;
   height: 100vh;
 }
 header nav .hamburger {
-  border-bottom: 2px solid var(--color-faded-beige);
+  border-bottom: 1px solid var(--color-beige);
   padding: var(--spacing);
 }
 header nav .hamburger a {
@@ -363,7 +323,8 @@ header nav .hamburger a {
   color: black;
   text-decoration: none;
 }
-header nav .hamburger-icon, header nav .cross-icon {
+header nav .hamburger-icon,
+header nav .cross-icon {
   max-height: 13px;
   cursor: pointer;
   opacity: 1;
@@ -373,8 +334,8 @@ header nav .hamburger-icon, header nav .cross-icon {
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 header nav .cross-icon {
-  opacity: 0;
-  visibility: hidden;
+  opacity: 0; /* Initially hidden */
+  visibility: hidden; /* Prevent it from being clickable */
 }
 
 /* css kóði fyrir newsletter og footer næ ekki að tengja þetta við scss*/
@@ -571,70 +532,19 @@ footer {
   width: 205px;
 }
 
-
-@media (min-width: 700px) {
-  .wrapper {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(12, 1fr);
-    justify-items: center;
-    gap: 30px;
-    width: 100%;
-    min-height: 100vh;
-  }
-  .wrapper > * {
-    grid-column: span 12;
+@media (max-width: 700px) {
+  .desktop {
+    display: none;
   }
 }
-.ingredients-box {
-  padding: 0 var(--spacing-double);
-}
-.ingredients-box h2 {
-  color: var(--color-grey);
-  text-align: left;
-  padding-top: 2rem;
-  font-size: 20px;
-}
-.ingredients-box p {
-  padding-top: var(--spacing);
-}
-.ingredients-box table {
-  width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0;
-  height: 150px;
-}
-.ingredients-box table td {
-  vertical-align: center;
-}
-.ingredients-box table td:first-child {
-  width: 20px;
-  font-family: var(--font-family-playfair);
-  font-size: 32px;
-  color: var(--color-beige);
-  vertical-align: center;
-}
-.ingredients-box table td:last-child {
-  padding-left: 40px;
-  font-size: 16px;
-  color: var(--color-dark-grey);
-}
-
-.text-container h2 {
-  color: var(--color-grey);
-  text-align: left;
-  padding: var(--spacing) var(--spacing-double);
-  font-size: 20px;
-}
-.text-container .text {
-  padding: 0 var(--spacing-double);
-  font-size: 15px;
-  color: var(--color-dark-grey);
-  text-align: justify;
+.intro {
+  grid-column: 3/5; /* Spans from column 2 to column 4 */
+  display: flex; /* Use flexbox within .intro for its internal layout */
+  flex-direction: column;
 }
 
 main {
   width: 100%;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles.cs.map */
