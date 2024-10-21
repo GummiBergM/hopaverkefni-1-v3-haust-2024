@@ -1,0 +1,56 @@
+.ingredients-box {
+    padding: 0 var(--spacing-double);
+
+    h2 {
+        color: var(--color-grey);
+        text-align: left;
+        padding-top: 2rem;
+        font-size: 20px;
+    }
+
+    p {
+        padding-top: var(--spacing);
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+        height: 150px;
+
+        td {
+            vertical-align: center;
+
+            &:first-child {
+                width: 20px;
+                font-family: var(--font-family-playfair);
+                font-size: 32px;
+                color: var(--color-beige);
+                vertical-align: center;
+            }
+
+            &:last-child {
+                padding-left: 40px;
+                font-size: 16px;
+                color: var(--color-dark-grey);
+            }
+        }
+    }
+}
+
+.text-container {
+
+    h2 {
+        color: var(--color-grey);
+        text-align: left;
+        padding: var(--spacing) var(--spacing-double);
+        font-size: 20px;
+    }
+
+    .text {
+        padding: 0 var(--spacing-double);
+        font-size: 15px;
+        color: var(--color-dark-grey);
+        text-align: justify;
+    }
+}

@@ -2,8 +2,11 @@
   "name": "hopaverkefni-1-v3-haust-2024",
   "version": "1.0.0",
   "description": "hopaverkefni",
-  "main": "index.js",
+  "main": "scripts.js",
   "scripts": {
+    "dev": "browser-sync start --server --files scripts.js index.html",
+    "copy:html": "cpy ./*.gtml ./build/",
+    "build": "concurrently npm:copy:*",
     "sass" : "sass styles.scss styles.css"
   },
   "author": "",

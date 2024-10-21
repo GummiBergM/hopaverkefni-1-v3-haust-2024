@@ -22,14 +22,14 @@ header {
       display: none;
       flex-direction: column;
       list-style: none;
-      background-color: var(--color-grey);
+      background-color: var(--color-even-lighter-grey);
       width: 100%;
       text-align: center;
       height: 100vh;
     }
 
     .hamburger {
-      border-bottom: 1px solid var(--color-beige);
+      border-bottom: 2px solid var(--color-faded-beige);
       padding: var(--spacing);
       
       a {
@@ -51,8 +51,8 @@ header {
     }
     
     .cross-icon {
-      opacity: 0; // Initially hidden
-      visibility: hidden; // Prevent it from being clickable
+      opacity: 0;
+      visibility: hidden;
     }
   }
 }
