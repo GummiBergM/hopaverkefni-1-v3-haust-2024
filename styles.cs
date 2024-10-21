@@ -87,8 +87,19 @@ html {
   padding: 0;
 }
 
-main {
-  display: grid;
+@media (min-width: 700px) {
+  .wrapper {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(12, 1fr);
+    justify-items: center;
+    gap: 30px;
+    width: 100%;
+    min-height: 100vh;
+  }
+}
+.wrapper > * {
+  grid-column: span 12;
 }
 
 .card {
@@ -173,19 +184,23 @@ textarea {
 }
 
 /**Index**/
-@media (min-width: 700px) {
+@media (max-width: 700px) {
   .phone {
     display: none;
   }
+  .intro {
+    text-align: center;
+  }
 }
+/*
 @media (max-width: 700px) {
   .desktop {
     display: none;
   }
 }
+*/
 .intro {
   background-color: var(--color-grey);
-  text-align: center;
   background-image: url("../myndir/pumpkinPie.png");
   background-size: 650px;
   background-position: 0px -100px;
@@ -308,7 +323,8 @@ header nav .hamburger a {
   color: black;
   text-decoration: none;
 }
-header nav .hamburger-icon, header nav .cross-icon {
+header nav .hamburger-icon,
+header nav .cross-icon {
   max-height: 13px;
   cursor: pointer;
   opacity: 1;
@@ -318,8 +334,8 @@ header nav .hamburger-icon, header nav .cross-icon {
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 header nav .cross-icon {
-  opacity: 0;
-  visibility: hidden;
+  opacity: 0; /* Initially hidden */
+  visibility: hidden; /* Prevent it from being clickable */
 }
 
 /* css kóði fyrir newsletter og footer næ ekki að tengja þetta við scss*/
@@ -516,22 +532,19 @@ footer {
   width: 205px;
 }
 
-@media (min-width: 700px) {
-  .wrapper {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: repeat(12, 1fr);
-    justify-items: center;
-    gap: 30px;
-    width: 100%;
-    min-height: 100vh;
-  }
-  .wrapper > * {
-    grid-column: span 12;
+@media (max-width: 700px) {
+  .desktop {
+    display: none;
   }
 }
+.intro {
+  grid-column: 3/5; /* Spans from column 2 to column 4 */
+  display: flex; /* Use flexbox within .intro for its internal layout */
+  flex-direction: column;
+}
+
 main {
   width: 100%;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles.cs.map */
