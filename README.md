@@ -1,13 +1,6 @@
 # GAMEPLAN
-Latest recipes page, rough html - Gummi (done)
 
-Navigation bar, rough html - Gummi (done)
-
-index.html, rough html - Joseph (done)
-
-Myndir folder and images on homepage and recipes - Joseph (done) - if anything is missing let Joseph know... or do it yourself heheh
-
-Nav links and fix broken links - Joseph (done)
+reconfiguring grid - joseph
 
 ---
 
