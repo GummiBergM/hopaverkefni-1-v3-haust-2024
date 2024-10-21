@@ -32,6 +32,7 @@ html {
   --font-size-headings: 1.5rem;
   /* Grunn bilið okkar er 1rem == 16px */
   --spacing: 1rem;
+  --spacing-double: 2rem;
   /* Bil á milli „stærri“ eininga (header, efnisbox, footer) */
   --vertical-space: calc(var(--gutter) * 1);
   --vertical-space-large: calc(var(--gutter) * 1.5);
@@ -59,10 +60,16 @@ html {
   --transition-timing-function: ease-in-out;
 
   /* Litir */
-  --color-beige: #E3CDB1;
+  --color-beige: #e3cdb1;
   --color-faded-beige: #F7F1EB;
-  --color-grey: #F6F6F6;
-  --color-dark-grey: #5E5B69;
-  
 
+  --color-dark-grey: #5E5B69;
+  --color-grey: #D0D0D0;
+  --color-light-grey: #F6F6F6;
+  --color-even-lighter-grey: #FAFAFA;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-beige);
 }
