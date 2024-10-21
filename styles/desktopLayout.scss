@@ -12,4 +12,12 @@
   .wrapper > * {
     grid-column: span 12;
   }
+  .intro {
+    height: 800px;
+    background-size: 850px;
+    background-position: calc(50vw) -65px;
+  }
+  .phone {
+    display: none;
+  }
 }
