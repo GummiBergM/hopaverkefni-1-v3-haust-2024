@@ -331,33 +331,6 @@ header nav .cross-icon {
   visibility: hidden;
 }
 
-.book {
-  text-align: center;
-  height: 543px;
-  background: linear-gradient(to bottom, var(--color-faded-beige) 75%, white 75%);
-  padding-left: var(--spacing);
-  padding-right: var(--spacing);
-}
-.book a {
-  color: var(--color-beige);
-  text-decoration: none;
-}
-.book p {
-  padding-top: 0.5rem;
-  padding-bottom: 1rem;
-  color: var(--color-dark-grey);
-  font-family: var(--font-family-poppins);
-}
-.book h2 {
-  font-size: 32px;
-  padding-top: 4rem;
-}
-.book img {
-  padding-top: 3rem;
-  height: auto;
-  width: 205px;
-}
-
 /* css kóði fyrir newsletter og footer næ ekki að tengja þetta við scss*/
 .newsletter {
   background-color: #000000;
@@ -523,6 +496,33 @@ footer {
 
 .button-27 {
   justify-content: right;
+}
+
+.book {
+  text-align: center;
+  height: 543px;
+  background: linear-gradient(to bottom, var(--color-faded-beige) 75%, white 75%);
+  padding-left: var(--spacing);
+  padding-right: var(--spacing);
+}
+.book a {
+  color: var(--color-beige);
+  text-decoration: none;
+}
+.book p {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  color: var(--color-dark-grey);
+  font-family: var(--font-family-poppins);
+}
+.book h2 {
+  font-size: 32px;
+  padding-top: 4rem;
+}
+.book img {
+  padding-top: 3rem;
+  height: auto;
+  width: 205px;
 }
 
 main {
