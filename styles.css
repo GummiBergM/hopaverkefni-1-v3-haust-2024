@@ -69,6 +69,13 @@ a {
   color: var(--color-beige);
 }
 
+.put-button-in-middle {
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-double) 0;
+  background-color: var(--color-light-grey);
+}
+
 .button {
   text-align: center;
   border: var(--color-beige) 1px solid;
@@ -225,7 +232,7 @@ textarea {
 
 /**Index**/
 @media (max-width: 700px) {
-  .phone {
+  .desktop {
     display: none;
   }
   .intro {
@@ -381,7 +388,7 @@ header nav .cross-icon {
 /* css kóði fyrir newsletter og footer næ ekki að tengja þetta við scss*/
 .newsletter {
   background-color: #000000;
-  padding: 20px;
+  padding: var(--spacing);
 }
 
 .newsletter-card {

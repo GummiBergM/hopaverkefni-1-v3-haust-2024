@@ -1,3 +1,10 @@
+.put-button-in-middle{
+    display: flex;
+    justify-content: center;
+    padding: var(--spacing-double) 0;
+    background-color: var(--color-light-grey);
+}
+
 .button {
     text-align: center;
     border: var(--color-beige) 1px solid;
