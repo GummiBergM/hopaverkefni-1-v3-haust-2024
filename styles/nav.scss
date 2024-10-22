@@ -54,5 +54,27 @@ header {
       opacity: 0;
       visibility: hidden;
     }
+    @media (min-width: 700px){
+      .hamburger {
+        display: none;
+      }
+      .menu {
+        display: flex;
+        justify-content: flex-end; /* Adjust menu position on larger screens if needed */
+        background-color: transparent; /* Make sure it aligns well with larger screen design */
+        height: auto; /* Remove full height */
+        list-style: none; /* Remove bullet points */
+      }
+      img {
+        justify-content: left;
+        position: fixed;
+        left: 20px; 
+        top: 10px;  
+      }
+      header{
+        padding-top: var(--spacing);
+      }
+
+    }
   }
 }
