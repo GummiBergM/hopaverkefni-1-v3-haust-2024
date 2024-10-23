@@ -98,8 +98,33 @@ a {
 }
 
 .bottom-button {
+  background-color: var(--color-light-grey);
   padding: 4rem 0;
   text-align: center;
+}
+
+.line-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-light-grey);
+}
+@media (min-width: 700px) {
+  .line-container .button, .line-container .bottom-button {
+    margin: 0rem 3rem;
+  }
+}
+
+.line {
+  flex-grow: 1;
+  height: 1px;
+  border: none;
+  background-color: var(--color-grey);
+}
+@media (max-width: 699px) {
+  .line {
+    display: none;
+  }
 }
 
 /* "reset" sem fjarlægir default margin og padding af öllu */
@@ -108,16 +133,47 @@ a {
   padding: 0;
 }
 
-main {
-  display: grid;
+.cards {
+  background: linear-gradient(to bottom, white 10%, var(--color-light-grey) 10%);
+}
+@media (min-width: 700px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--gutter);
+  }
 }
 
 .card {
   background-color: white;
-  margin-top: var(--spacing);
-  margin-right: var(--spacing);
-  margin-left: var(--spacing);
-  max-width: 500px;
+  max-width: 100%;
+}
+@media (max-width: 699px) {
+  .card {
+    margin-top: var(--spacing);
+    margin-right: var(--spacing);
+    margin-left: var(--spacing);
+  }
+}
+@media (min-width: 700px) {
+  .card {
+    grid-column: span 6;
+  }
+  .card h2 {
+    font-size: 22px;
+  }
+  .card p {
+    font-size: 14px;
+  }
+  .card a {
+    font-size: 16px;
+    text-align: right;
+  }
+}
+@media (min-width: 1000px) {
+  .card {
+    grid-column: span 4;
+  }
 }
 .card img {
   height: 206px;
@@ -168,10 +224,6 @@ main {
 
 .still-video:hover .overlay {
   opacity: 1;
-}
-
-.cards {
-  background: linear-gradient(to bottom, white 10%, var(--color-light-grey) 10%);
 }
 
 @font-face {
@@ -304,6 +356,20 @@ textarea {
 }
 .title .titleflex .secondaryTitle {
   color: black;
+}
+@media (min-width: 700px) {
+  .title .desktop {
+    display: block;
+    text-align: left;
+    font-size: 16px;
+  }
+  .title .titleflex {
+    justify-content: left;
+    padding-bottom: var(--spacing);
+  }
+  .title .titleflex h2 {
+    font-size: 40px;
+  }
 }
 
 .level {
@@ -585,9 +651,10 @@ footer {
     grid-template-rows: auto;
     grid-template-columns: repeat(12, 1fr);
     justify-items: center;
-    gap: 30px;
+    gap: var(--gutter);
     width: 100%;
     min-height: 100vh;
+    padding: 0 0;
   }
   .wrapper > * {
     grid-column: span 12;
