@@ -808,6 +808,10 @@ footer {
     grid-column: span 8;
   }
 }
+.ignas-prufa {
+  display: flex;
+}
+
 main {
   width: 100%;
 }
