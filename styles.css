@@ -358,10 +358,13 @@ textarea {
   color: black;
 }
 @media (min-width: 700px) {
-  .title .desktop {
+  .title p {
     display: block;
     text-align: left;
     font-size: 16px;
+  }
+  .title .phone {
+    display: none;
   }
   .title .titleflex {
     justify-content: left;
@@ -369,6 +372,7 @@ textarea {
   }
   .title .titleflex h2 {
     font-size: 40px;
+    padding-right: 0.3rem;
   }
 }
 
@@ -715,6 +719,34 @@ footer {
   text-align: justify;
 }
 
+@media (min-width: 700px) {
+  .recipe-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .recipe-container h2, .recipe-container .text, .recipe-container p {
+    padding: 0;
+  }
+  .recipe-container h2 {
+    font-size: 40px;
+    padding-top: 5rem;
+    padding-bottom: var(--spacing-double);
+  }
+  .recipe-container p {
+    font-size: 18px;
+  }
+  .yet-another-ingredients-box {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gutter);
+  }
+  .ingredients-container {
+    grid-column: span 4;
+  }
+  .method-container {
+    grid-column: span 8;
+  }
+}
 main {
   width: 100%;
 }
