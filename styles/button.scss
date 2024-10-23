@@ -29,6 +29,31 @@
 }
 
 .bottom-button {
+    background-color: var(--color-light-grey);
     padding: 4rem 0;
     text-align: center;
+}
+
+.line-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-light-grey);
+
+    @media (min-width: 700px) {
+        .button, .bottom-button {
+            margin: 0rem 3rem;
+        }
+    }
+}
+
+.line {
+    flex-grow: 1;
+    height: 1px;
+    border: none;
+    background-color: var(--color-grey);
+
+    @media (max-width: 699px) {
+        display: none;
+    }
 }
