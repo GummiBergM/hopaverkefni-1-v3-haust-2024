@@ -99,8 +99,10 @@ a {
 
 .bottom-button {
   background-color: var(--color-light-grey);
-  padding: 4rem 0;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
   text-align: center;
+  grid-column: span 12;
 }
 
 .line-container {
@@ -743,7 +745,6 @@ footer {
     row-gap: 0; /* <- ekkert lóðrétt bil milli containers */
     width: 100%;
     min-height: 100vh;
-    padding: 0 0;
     background-color: var(--color-light-grey);
   }
   .wrapper > * {
