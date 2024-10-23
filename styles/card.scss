@@ -6,6 +6,8 @@
   );
 
   @media (min-width: 700px) {
+    max-width: 1300px;
+    padding: 0 var(--spacing);
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: var(--gutter);

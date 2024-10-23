@@ -98,9 +98,8 @@ a {
 }
 
 .bottom-button {
+  padding: 4rem 0;
   background-color: var(--color-light-grey);
-  padding-top: 1rem;
-  padding-bottom: 4rem;
   text-align: center;
   grid-column: span 12;
 }
@@ -110,8 +109,12 @@ a {
   align-items: center;
   justify-content: center;
   background-color: var(--color-light-grey);
+  max-width: 1300px;
 }
 @media (min-width: 700px) {
+  .line-container {
+    padding: 0 var(--spacing);
+  }
   .line-container .button, .line-container .bottom-button {
     margin: 0rem 3rem;
   }
@@ -140,6 +143,8 @@ a {
 }
 @media (min-width: 700px) {
   .cards {
+    max-width: 1300px;
+    padding: 0 var(--spacing);
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: var(--gutter);
@@ -401,6 +406,7 @@ textarea {
 }
 @media (min-width: 700px) {
   .title p {
+    padding: 0 var(--spacing);
     display: block;
     text-align: left;
     font-size: 16px;
@@ -409,6 +415,7 @@ textarea {
     display: none;
   }
   .title .titleflex {
+    padding: 0 var(--spacing);
     justify-content: left;
     padding-bottom: var(--spacing);
   }

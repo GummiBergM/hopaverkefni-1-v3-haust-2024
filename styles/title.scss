@@ -25,6 +25,7 @@
 
   @media (min-width: 700px) {
     p {
+        padding: 0 var(--spacing);
         display: block;
         text-align: left;
         font-size:  16px;
@@ -35,6 +36,7 @@
     }
 
     .titleflex {
+        padding: 0 var(--spacing);
         justify-content: left;
         padding-bottom: var(--spacing);
 
