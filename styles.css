@@ -99,8 +99,10 @@ a {
 
 .bottom-button {
   background-color: var(--color-light-grey);
-  padding: 4rem 0;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
   text-align: center;
+  grid-column: span 12;
 }
 
 .line-container {
@@ -263,8 +265,8 @@ h2 {
 }
 
 .desktop {
-  font-size: 14px;
-  color: #e3cdb1;
+  font-size: 18px;
+  color: #5E5B69;
   text-decoration: none;
 }
 
@@ -291,17 +293,61 @@ textarea {
     height: 500px;
     text-align: center;
     background-size: 650px;
-    background-position: 0px -100px;
+    padding-top: 5rem;
+    /*First pumpkin pie image, then shadow */
+    background-position: 0px -100px, -40px 50px;
   }
   .subtitle {
     font-size: 12px;
   }
+  .book {
+    /*cuts the beige color off at the 75% mark of div book, and makes the remaining 25% white */
+    background: linear-gradient(to bottom, var(--color-faded-beige) 75%, white 75%);
+    /*Padding I took from book.scss and transferred here as I don't think I need it in desktop-layout - Joseph*/
+    padding-left: var(--spacing);
+    padding-right: var(--spacing);
+    text-align: center;
+    height: 543px;
+  }
+  .book img {
+    width: 205px;
+  }
+  .book h2 {
+    font-size: 32px;
+    padding-top: 4rem;
+  }
+  /*Newsletter & footer section */
+  .newsletter {
+    flex-direction: column;
+    padding: 20px;
+  }
+  /**text & spacing**/
+  .newsletter-card h2 {
+    font-size: 20px;
+  }
+  .newsletter-card p {
+    font-size: 12px;
+    padding-top: 41px;
+  }
+  .newsletter-content label {
+    font-size: 12px;
+  }
+  .newsletter-card {
+    align-items: center;
+    padding: var(--spacing);
+  }
+  .newsletter-content {
+    max-width: 400px;
+  }
+  .newsletter-content-sub {
+    max-width: 400px;
+    width: 80%;
+  }
 }
 .intro {
   background-color: var(--color-light-grey);
-  background-image: url("../myndir/pumpkinPie.png");
+  background-image: url("../myndir/pumpkinPie.png"), url("../myndir/shadow.png");
   background-repeat: no-repeat;
-  padding-top: 5rem;
   /*Removing this destroys responsiveness and adds an image... idk */
   /**
     img {
@@ -318,10 +364,6 @@ textarea {
 .intro p,
 .intro a {
   font-family: var(--font-family-poppins-bold);
-}
-.intro h1 {
-  padding-top: 0.2rem;
-  padding-bottom: 1rem;
 }
 .intro .subtitle {
   color: var(--color-beige);
@@ -516,33 +558,28 @@ header nav img {
     color: #000000;
   }
 }
-/* css kóði fyrir newsletter og footer næ ekki að tengja þetta við scss*/
 .newsletter {
   background-color: #000000;
   padding: var(--spacing);
+  /*Makes newsletter stretch when needed */
+  width: 100%;
 }
 
 .newsletter-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: var(--spacing);
 }
 
 .newsletter-card {
   width: 100%;
-  padding: var(--spacing);
 }
 
 .newsletter-card p {
-  color: #E3CDB1;
-  font-size: 12px;
-  padding-top: 41px;
+  color: #e3cdb1;
 }
 
 .newsletter-card h2 {
   color: white;
-  font-size: 20px;
 }
 
 .newsletter-card p h2 {
@@ -553,22 +590,18 @@ header nav img {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 400px;
   margin-bottom: 10px;
 }
 
 .newsletter-content-sub {
   display: flex;
   flex-direction: column;
-  width: 80%;
-  max-width: 400px;
   margin-bottom: 10px;
 }
 
 .newsletter-content label {
   color: rgb(255, 255, 255);
   font-family: var(--font-family-poppins);
-  font-size: 12px;
   margin-bottom: 5px;
 }
 
@@ -601,9 +634,12 @@ footer {
   color: rgb(227, 205, 177);
   text-align: center;
   padding: 1rem;
+  /*Makes footer stretchy */
+  width: 100%;
 }
 
-.footer-text1, .footer-text2 {
+.footer-text1,
+.footer-text2 {
   flex: 1;
 }
 
@@ -635,7 +671,7 @@ footer {
 .button-27 {
   appearance: none;
   background-color: #000000;
-  border: 2px solid #1A1A1A;
+  border: 2px solid #1a1a1a;
   border-radius: 1px;
   border-color: rgb(227, 205, 177);
   box-sizing: border-box;
@@ -683,13 +719,6 @@ footer {
   justify-content: right;
 }
 
-.book {
-  text-align: center;
-  height: 543px;
-  background: linear-gradient(to bottom, var(--color-faded-beige) 75%, white 75%);
-  padding-left: var(--spacing);
-  padding-right: var(--spacing);
-}
 .book a {
   color: var(--color-beige);
   text-decoration: none;
@@ -700,37 +729,135 @@ footer {
   color: var(--color-dark-grey);
   font-family: var(--font-family-poppins);
 }
-.book h2 {
-  font-size: 32px;
-  padding-top: 4rem;
-}
 .book img {
   padding-top: 3rem;
   height: auto;
-  width: 205px;
 }
 
 @media (min-width: 700px) {
+  /*Wrapper section */
   .wrapper {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(var(--columns), 1fr);
     justify-items: center;
     gap: var(--gutter);
+    row-gap: 0; /* <- ekkert lóðrétt bil milli containers */
     width: 100%;
     min-height: 100vh;
-    padding: 0 0;
+    background-color: var(--color-light-grey);
   }
   .wrapper > * {
-    grid-column: span 12;
+    grid-column: span var(--columns);
   }
+  /*Intro section */
   .intro {
-    height: 800px;
+    /**720px miðað við að nav skal vera 80 samtals 800 px **/
+    height: 720px;
     background-size: 850px;
-    background-position: 50vw -65px;
+    /** responsive bakgrunnur, miðað samt við 1600px**/
+    background-position: 50vw -70px, calc(50vw - 100px) 125px;
+    /**This has the exact same grid as the wrapper**/
+    display: grid;
+    gap: var(--gutter);
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-auto-rows: auto;
+    /**This is to center the intro vertically and controls spacing**/
+    /** text **/
   }
+  .intro div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .intro h1 {
+    font-size: 60px;
+  }
+  /**Children of intro **/
+  .intro > * {
+    grid-column: 2/6;
+  }
+  /*Book section*/
+  .book {
+    /**This has the exact same grid as the wrapper**/
+    display: grid;
+    gap: var(--gutter);
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-auto-rows: auto;
+    /**cuts the beige color off at the 75% mark of div book, and makes the remaining 25% white **/
+    background: linear-gradient(to bottom, var(--color-faded-beige) 85%, white 85%);
+    /**beige color part is 670px, I will try to have the rest white **/
+    height: 700px;
+  }
+  .book h2 {
+    font-size: 60px;
+  }
+  .book > div img {
+    max-width: 440.35px;
+    width: 100%;
+  }
+  /**book text **/
+  .book > div:first-child {
+    grid-column: 3/7;
+    align-self: center;
+  }
+  #Announcement {
+    color: var(--color-beige);
+  }
+  /**book image **/
+  .book > div:last-child {
+    grid-column: 7/11;
+    align-self: center;
+    justify-self: end;
+  }
+  /*Misc */
+  /**Hides text made for mobile layout **/
   .phone {
     display: none;
+  }
+  /**Gerði þetta þannig að button er ekki að stækka og minnka með skjánum **/
+  .button {
+    width: 250px;
+    height: 52px;
+  }
+  /*newsletter & footer section */
+  .newsletter {
+    display: grid;
+    gap: var(--gutter);
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-auto-rows: auto;
+    height: 339px;
+  }
+  .newsletter-card {
+    justify-content: center;
+  }
+  /**newsletter content sizing **/
+  .newsletter-card h2 {
+    /**Actual font size is 40px but with the way we have grid now it doesn't fit in it's container **/
+    font-size: 35px;
+  }
+  .newsletter-card p {
+    font-size: var(--font-size-base);
+  }
+  .newsletter-content label {
+    font-size: 14px;
+  }
+  .newsletter-content-sub {
+    height: 52px;
+    max-width: 250px;
+    width: 100%;
+  }
+  /**Spacing **/
+  .newsletter > div:nth-child(1) {
+    grid-column: 2/6;
+  }
+  .newsletter > div:nth-child(2) {
+    grid-column: 7/9;
+  }
+  .newsletter > div:nth-child(3) {
+    grid-column: 9/12;
+    align-items: end;
   }
 }
 .ingredients-box {

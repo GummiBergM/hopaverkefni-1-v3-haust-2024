@@ -30,8 +30,10 @@
 
 .bottom-button {
     background-color: var(--color-light-grey);
-    padding: 4rem 0;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
     text-align: center;
+    grid-column: span 12;
 }
 
 .line-container {

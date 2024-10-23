@@ -1,24 +1,150 @@
 @media (min-width: 700px) {
+  /*Wrapper section */
   .wrapper {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(var(--columns), 1fr);
 
     justify-items: center;
     gap: var(--gutter);
+    row-gap: 0; /* <- ekkert lóðrétt bil milli containers */
     width: 100%;
     min-height: 100vh;
-    padding: 0 0; // might need to figure this shit out
+
+    background-color: var(--color-light-grey);
   }
   .wrapper > * {
-    grid-column: span 12;
+    grid-column: span var(--columns);
   }
+
+  /*Intro section */
   .intro {
-    height: 800px;
+    /**720px miðað við að nav skal vera 80 samtals 800 px **/
+    height: 720px;
+
     background-size: 850px;
-    background-position: calc(50vw) -65px;
+    /** responsive bakgrunnur, miðað samt við 1600px**/
+    background-position: calc(50vw) -70px, calc(50vw - 100px) 125px;
+
+    /**This has the exact same grid as the wrapper**/
+    display: grid;
+    gap: var(--gutter);
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-auto-rows: auto;
+
+    /**This is to center the intro vertically and controls spacing**/
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    /** text **/
+    h1 {
+      font-size: 60px;
+    }
   }
+
+  /**Children of intro **/
+  .intro > * {
+    grid-column: 2 / 6;
+  }
+
+  /*Book section*/
+  .book {
+    /**This has the exact same grid as the wrapper**/
+    display: grid;
+    gap: var(--gutter);
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-auto-rows: auto;
+
+    /**cuts the beige color off at the 75% mark of div book, and makes the remaining 25% white **/
+    background: linear-gradient(
+      to bottom,
+      var(--color-faded-beige) 85%,
+      white 85%
+    );
+
+    /**beige color part is 670px, I will try to have the rest white **/
+    height: 700px;
+
+    h2 {
+      font-size: 60px;
+    }
+  }
+  .book > div img {
+    max-width: 440.35px;
+    width: 100%;
+  }
+  /**book text **/
+  .book > div:first-child {
+    grid-column: 3 / 7;
+    align-self: center;
+  }
+  #Announcement {
+    color: var(--color-beige);
+  }
+  /**book image **/
+  .book > div:last-child {
+    grid-column: 7 / 11;
+    align-self: center;
+    justify-self: end;
+  }
+  /*Misc */
+
+  /**Hides text made for mobile layout **/
   .phone {
     display: none;
+  }
+  /**Gerði þetta þannig að button er ekki að stækka og minnka með skjánum **/
+  .button {
+    width: 250px;
+    height: 52px;
+  }
+
+  /*newsletter & footer section */
+
+  .newsletter {
+    display: grid;
+    gap: var(--gutter);
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-auto-rows: auto;
+
+    height: 339px;
+  }
+  .newsletter-card {
+    justify-content: center;
+  }
+
+  /**newsletter content sizing **/
+  .newsletter-card h2 {
+    /**Actual font size is 40px but with the way we have grid now it doesn't fit in it's container **/
+    font-size: 35px; 
+  }
+  .newsletter-card p {
+    font-size: var(--font-size-base);
+  }
+  .newsletter-content label {
+    font-size: 14px;
+  }
+  .newsletter-content-sub {
+    height: 52px;
+    max-width: 250px;
+    width: 100%
+  }
+
+  /**Spacing **/
+  .newsletter > div:nth-child(1) {
+    grid-column: 2 / 6;
+  }
+
+  .newsletter > div:nth-child(2) {
+    grid-column: 7 / 9;
+  }
+
+  .newsletter > div:nth-child(3) {
+    grid-column: 9 / 12;
+    align-items: end;
   }
 }

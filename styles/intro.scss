@@ -1,17 +1,12 @@
 .intro {
   background-color: var(--color-light-grey);
-  background-image: url("../myndir/pumpkinPie.png");
+  background-image: 
+  url("../myndir/pumpkinPie.png"),
+  url("../myndir/shadow.png");
   background-repeat: no-repeat;
-  padding-top: 5rem;
-
   p,
   a {
     font-family: var(--font-family-poppins-bold);
-  }
-
-  h1 {
-    padding-top: 0.2rem;
-    padding-bottom: 1rem;
   }
 
   .subtitle {

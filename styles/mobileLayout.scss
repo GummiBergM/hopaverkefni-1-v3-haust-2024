@@ -8,10 +8,66 @@
     height: 500px;
     text-align: center;
     background-size: 650px;
-    background-position: 0px -100px;
-  }
+    padding-top: 5rem;
 
+    /*First pumpkin pie image, then shadow */
+    background-position: 0px -100px, -40px 50px;
+  }
   .subtitle {
     font-size: 12px;
+  }
+
+  .book {
+    /*cuts the beige color off at the 75% mark of div book, and makes the remaining 25% white */
+    background: linear-gradient(
+      to bottom,
+      var(--color-faded-beige) 75%,
+      white 75%
+    );
+
+    /*Padding I took from book.scss and transferred here as I don't think I need it in desktop-layout - Joseph*/
+    padding-left: var(--spacing);
+    padding-right: var(--spacing);
+
+    text-align: center;
+
+    height: 543px;
+
+    img {
+      width: 205px;
+    }
+    h2 {
+      font-size: 32px;
+      padding-top: 4rem;
+    }
+  }
+
+  /*Newsletter & footer section */
+  .newsletter {
+    flex-direction: column;
+    padding: 20px;
+  }
+  /**text & spacing**/
+  .newsletter-card h2 {
+    font-size: 20px;
+  }
+  .newsletter-card p {
+    font-size: 12px;
+    padding-top: 41px;
+  }
+  .newsletter-content label {
+    font-size: 12px;
+  }
+
+  .newsletter-card {
+    align-items: center;
+    padding: var(--spacing);
+  }
+  .newsletter-content {
+    max-width: 400px;
+  }
+  .newsletter-content-sub {
+    max-width: 400px;
+    width: 80%
   }
 }
