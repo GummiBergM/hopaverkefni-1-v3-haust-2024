@@ -1,9 +1,7 @@
 @import './styles/config';
 @import './styles/button';
 @import './styles/reset';
-@import './styles/wrapper';
 @import './styles/card';
-@import './styles/cards';
 @import './styles/text';
 @import './styles/mobileLayout';
 @import './styles/intro';
@@ -15,6 +13,8 @@
 @import './styles/book';
 @import './styles/desktopLayout';
 @import './styles/ingredients';
+@import './styles/recipes';
+
 main {
     width: 100%;
 }

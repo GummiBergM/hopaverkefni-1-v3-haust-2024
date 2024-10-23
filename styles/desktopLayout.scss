@@ -5,9 +5,10 @@
     grid-template-columns: repeat(12, 1fr);
 
     justify-items: center;
-    gap: 30px;
+    gap: var(--gutter);
     width: 100%;
     min-height: 100vh;
+    padding: 0 0; // might need to figure this shit out
   }
   .wrapper > * {
     grid-column: span 12;

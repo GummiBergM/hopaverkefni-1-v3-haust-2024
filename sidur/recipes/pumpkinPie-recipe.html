@@ -9,274 +9,289 @@
     <meta property="og:title" content="yum&yum" />
     <meta property="og:description" content="vantar description" />
     <meta property="og:image" content="vantar mynd" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   </head>
 
   <body>
-    <header>
-      <nav>
+    <div class="wrapper">
+      <header>
+        <nav>
+          <div>
+            <a href="../../index.html">
+              <img src="../../myndir/yumYumLogo.png" alt="" />
+            </a>
+            <img
+              class="hamburger-icon"
+              id="hamburger"
+              src="../../icons/burger-menu.png"
+              onclick="toggleMenu()"
+            />
+            <img
+              class="cross-icon"
+              id="cross"
+              src="../../icons/cross.png"
+              onclick="toggleMenu()"
+            />
+          </div>
+          <ul class="menu" id="menu">
+            <li class="hamburger"><a href="../../index.html">Home</a></li>
+            <li class="hamburger"><a href="../recipes.html">Recipes</a></li>
+            <li class="hamburger"><a href="../videos.html">Videos</a></li>
+            <li class="hamburger"><a href="../about.html">About us</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
         <div>
-          <a href="../../index.html">
-            <img src="../../myndir/yumYumLogo.png" alt="" />
-          </a>
-          <img
-            class="hamburger-icon"
-            id="hamburger"
-            src="../../icons/burger-menu.png"
-            onclick="toggleMenu()"
-          />
-          <img
-            class="cross-icon"
-            id="cross"
-            src="../../icons/cross.png"
-            onclick="toggleMenu()"
-          />
-        </div>
-        <ul class="menu" id="menu">
-          <li class="hamburger"><a href="/index.html">Home</a></li>
-          <li class="hamburger"><a href="sidur/recipes.html">Recipes</a></li>
-          <li class="hamburger"><a href="sidur/videos.html">Videos</a></li>
-          <li class="hamburger"><a href="#">About us</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <div>
-        <div class="intro">
-          <h1>Pumkpin pie</h1>
-          <div class="phone">
-            <p class="recipe-subtitle">
-              As you pour the first glass of your favorite Chianti or Chardonnay
-            </p>
-          </div>
-
-          <div>
-            <!--small icons next to each text-->
-            <div class="level">
-              <img src="../../icons/level-icon.png" />
-              <div class="level-text">
-                <p class="level-black">Easy</p>
-                <p>recipe</p>
-              </div>
-            </div>
-            <div class="level">
-              <img src="../../icons/servings-icon.png" />
-              <div class="level-text">
-                <p class="level-black">6</p>
-                <p>people</p>
-              </div>
-            </div>
-            <div class="level">
-              <img src="../../icons/preperation-icon.png" />
-              <div class="level-text">
-                <p class="level-black">1</p>
-                <p>hour</p>
-              </div>
-            </div>
-          </div>
-          <div class="desktop">
-            <p>
-              Pumpkin pie is a sweet dessert pie with a spiced, pumpkin-based
-              custard filling. The pumpkin is a symbol of harvest time, and
-              pumpkin pie is often eaten during the fall and early winter.
-            </p>
-          </div>
-          <div>
-            <img src="../../myndir/pumpkinPie.png" alt="" />
-          </div>
-        </div>
-
-        <section>
-          <div>
-            <div class="ingredients-box">
-              <h2>Ingredients</h2>
-              <div>
-                <p>For the dough</p>
-              </div>
-              <div class="ingredients">
-                <table>
-                  <tr>
-                    <td>1</td>
-                    <td>tbs of water</td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>cups of flour</td>
-                  </tr>
-                  <tr>
-                    <td>2</td>
-                    <td>eggs</td>
-                  </tr>
-                  <tr>
-                    <td>1</td>
-                    <td>cup of sugar</td>
-                  </tr>
-                </table>
-              </div>
-              <div>
-                <div>
-                  <p>For the filling</p>
-                </div>
-                <div class="ingredients">
-                  <table>
-                    <tr>
-                      <td>1</td>
-                      <td>tbs of water</td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>cups of flour</td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>eggs</td>
-                    </tr>
-                    <tr>
-                      <td>1</td>
-                      <td>cup of sugar</td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <div class="text-container">
-            <div>
-              <h2>The method</h2>
-            </div>
+          <div class="intro">
+            <h1>Pumkpin pie</h1>
             <div class="phone">
-              <div class="text">
-                <p>
-                  Wrap the crackers in a tea towel and smash up until fine,
-                  breaking up any big bits with your hands, and put them into a
-                  large bowl.
-                </p>
-                <p>
-                  Finely chop the parsely, including the stalks. Add the
-                  parsley, mustard, fi using, and minced beef to the bowl. Crack
-                  in the egg and add a good pinch of salt and pepper.
-                </p>
-                <p>
-                  With clean hands, scrunch and mix everything up well. Divide
-                  into 6 and pat and mould each piece into a roundish shape
-                  about 2cm thick. Drizzle the burgers with oil, put on a plate,
-                  cover and place in the fridge until needed (this helps them to
-                  firm up).
-                </p>
+              <p class="recipe-subtitle">
+                As you pour the first glass of your favorite Chianti or
+                Chardonnay
+              </p>
+            </div>
+
+            <div>
+              <!--small icons next to each text-->
+              <div class="level">
+                <img src="../../icons/level-icon.png" />
+                <div class="level-text">
+                  <p class="level-black">Easy</p>
+                  <p>recipe</p>
+                </div>
+              </div>
+              <div class="level">
+                <img src="../../icons/servings-icon.png" />
+                <div class="level-text">
+                  <p class="level-black">6</p>
+                  <p>people</p>
+                </div>
+              </div>
+              <div class="level">
+                <img src="../../icons/preperation-icon.png" />
+                <div class="level-text">
+                  <p class="level-black">1</p>
+                  <p>hour</p>
+                </div>
               </div>
             </div>
             <div class="desktop">
-              <div class="text">
-                <p>
-                  Wrap the crackers in a tea towel and smash up until fine,
-                  breaking up any big bits with your hands, and put them into a
-                  large bowl.
-                </p>
-                <p>
-                  Finely chop the parsely, including the stalks. Add the
-                  parsley, mustard, fi using, and minced beef to the bowl. Crack
-                  in the egg and add a good pinch of salt and pepper.
-                </p>
-                <p>
-                  With clean hands, scrunch and mix everything up well. Divide
-                  into 6 and pat and mould each piece into a roundish shape
-                  about 2cm thick. Drizzle the burgers with oil, put on a plate,
-                  cover and place in the fridge until needed (this helps them to
-                  firm up).
-                </p>
-                <p>
-                  Preheat a large griddle or frying pan for about 4 minutes on a
-                  high heat. Turn the heat down to medium.
-                </p>
-                <p>
-                  Place the burgers on the griddle or in the pan and use a
-                  spatula ot lightly press down on them, making sure the burger
-                  is in full ocntact. Cook them ot your liking for 3 or 4
-                  minutes on each side - you may need to cook them in two
-                  batches.
-                </p>
-                <p>
-                  Wash and dry a few small lettuce leaves, tearing up the larger
-                  ones. Slice the omatoes. Peel and finely slice the red onion.
-                  Slice the gherkins lengthways as finely as you can. Place all
-                  this on a platter and put in the middle of the table with
-                  plates, cutlery, ketchup and drinks.
-                </p>
-                <p>
-                  remove your burgers to another plate and carefully wipe your
-                  pan or griddle clean with kitchen paper.
-                </p>
-                <p>
-                  Halve your burger buns and lightly toast them on the griddle
-                  or in the pan. Also great with a chopped salad.
-                </p>
+              <p>
+                Pumpkin pie is a sweet dessert pie with a spiced, pumpkin-based
+                custard filling. The pumpkin is a symbol of harvest time, and
+                pumpkin pie is often eaten during the fall and early winter.
+              </p>
+            </div>
+            <div>
+              <img src="../../myndir/pumpkinPie.png" alt="" />
+            </div>
+          </div>
+
+          <div class="recipe-container">
+            <section class="ingredients-container">
+              <div>
+                <div class="ingredients-box">
+                  <h2>Ingredients</h2>
+                  <div class="yet-another-ingredients-box">
+                    <div>
+                      <div>
+                        <p>For the dough</p>
+                      </div>
+                      <div class="ingredients">
+                        <table>
+                          <tr>
+                            <td>1</td>
+                            <td>tbs of water</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>cups of flour</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>eggs</td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>cup of sugar</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <div>
+                      <div>
+                        <p>For the filling</p>
+                      </div>
+                      <div class="ingredients">
+                        <table>
+                          <tr>
+                            <td>1</td>
+                            <td>tbs of water</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>cups of flour</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>eggs</td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>cup of sugar</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="method-container">
+              <div class="text-container">
+                <div>
+                  <h2>The method</h2>
+                </div>
+                <div class="phone">
+                  <div class="text">
+                    <p>
+                      Wrap the crackers in a tea towel and smash up until fine,
+                      breaking up any big bits with your hands, and put them
+                      into a large bowl.
+                    </p>
+                    <p>
+                      Finely chop the parsely, including the stalks. Add the
+                      parsley, mustard, fi using, and minced beef to the bowl.
+                      Crack in the egg and add a good pinch of salt and pepper.
+                    </p>
+                    <p>
+                      With clean hands, scrunch and mix everything up well.
+                      Divide into 6 and pat and mould each piece into a roundish
+                      shape about 2cm thick. Drizzle the burgers with oil, put
+                      on a plate, cover and place in the fridge until needed
+                      (this helps them to firm up).
+                    </p>
+                  </div>
+                </div>
+                <div class="desktop">
+                  <div class="text">
+                    <p>
+                      Wrap the crackers in a tea towel and smash up until fine,
+                      breaking up any big bits with your hands, and put them
+                      into a large bowl.
+                    </p>
+                    <p>
+                      Finely chop the parsely, including the stalks. Add the
+                      parsley, mustard, fi using, and minced beef to the bowl.
+                      Crack in the egg and add a good pinch of salt and pepper.
+                    </p>
+                    <p>
+                      With clean hands, scrunch and mix everything up well.
+                      Divide into 6 and pat and mould each piece into a roundish
+                      shape about 2cm thick. Drizzle the burgers with oil, put
+                      on a plate, cover and place in the fridge until needed
+                      (this helps them to firm up).
+                    </p>
+                    <p>
+                      Preheat a large griddle or frying pan for about 4 minutes
+                      on a high heat. Turn the heat down to medium.
+                    </p>
+                    <p>
+                      Place the burgers on the griddle or in the pan and use a
+                      spatula ot lightly press down on them, making sure the
+                      burger is in full ocntact. Cook them ot your liking for 3
+                      or 4 minutes on each side - you may need to cook them in
+                      two batches.
+                    </p>
+                    <p>
+                      Wash and dry a few small lettuce leaves, tearing up the
+                      larger ones. Slice the omatoes. Peel and finely slice the
+                      red onion. Slice the gherkins lengthways as finely as you
+                      can. Place all this on a platter and put in the middle of
+                      the table with plates, cutlery, ketchup and drinks.
+                    </p>
+                    <p>
+                      remove your burgers to another plate and carefully wipe
+                      your pan or griddle clean with kitchen paper.
+                    </p>
+                    <p>
+                      Halve your burger buns and lightly toast them on the
+                      griddle or in the pan. Also great with a chopped salad.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <section>
+          <div class="title">
+            <div>
+              <p>All of the great recipes</p>
+            </div>
+            <div class="titleflex">
+              <h2>Chech out our</h2>
+              <h2 class="secondaryTitle">latest recipes</h2>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="card">
+              <img src="../../myndir/sushiRolls.png" alt="" />
+              <div class="infobox">
+                <p class="month">September</p>
+                <div>
+                  <h3>Lax sushi rolls</h3>
+                  <a class="desktop" href="#">Read more</a>
+                  <a class="phone" href="#">See</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="../../myndir/cookies.png" />
+              <div class="infobox">
+                <p class="month">September</p>
+                <div>
+                  <h2>Almond cookies</h2>
+                  <a class="desktop" href="#">Read more</a>
+                  <a class="phone" href="#">See</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="../../myndir/berryPie.png" />
+              <div class="infobox">
+                <p class="month">September</p>
+                <div>
+                  <h2>Questches pie</h2>
+                  <a class="desktop" href="#">Read more</a>
+                  <a class="phone" href="#">See</a>
+                </div>
               </div>
             </div>
           </div>
         </section>
-      </div>
 
-      <section>
-        <div class="title">
-          <div>
-            <p>All of the great recipes</p>
+        <div class="line-container">
+          <hr class="line">
+          <div class="put-button-in-middle">
+            <div class="phone">
+              <a class="button" href="#">Go to store</a>
+            </div>
+            <div class="desktop">
+              <a class="button" href="#">See more</a>
+            </div>
           </div>
-          <div class="titleflex">
-            <h2>Chech out our</h2>
-            <h2 class="secondaryTitle">latest recipes</h2>
-          </div>
+          <hr class="line">
         </div>
-        <div class="cards">
-          <div class="card">
-            <img src="../../myndir/sushiRolls.png" alt="" />
-            <div class="infobox">
-              <p class="month">September</p>
-              <div>
-                <h3>Lax sushi rolls</h3>
-                <a class="desktop" href="#">Read more</a>
-                <a class="phone" href="#">See</a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img src="../../myndir/cookies.png" />
-            <div class="infobox">
-              <p class="month">September</p>
-              <div>
-                <h2>Almond cookies</h2>
-                <a class="desktop" href="#">Read more</a>
-                <a class="phone" href="#">See</a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img src="../../myndir/berryPie.png" />
-            <div class="infobox">
-              <p class="month">September</p>
-              <div>
-                <h2>Questches pie</h2>
-                <a class="desktop" href="#">Read more</a>
-                <a class="phone" href="#">See</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      </main>
 
-      <div class="phone">
-        <a class="button" href="#">Go to store</a>
-      </div>
-      <div class="desktop">
-        <a class="button" href="#">See more</a>
-      </div>
-    </main>
-
-    <!--add footer later-->
-    <footer></footer>
-
+      <!--add footer later-->
+      <footer></footer>
+    </div>
     <script src="../../scripts/scripts.js"></script>
   </body>
 </html>
