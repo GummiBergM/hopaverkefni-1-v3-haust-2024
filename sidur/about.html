@@ -2,33 +2,94 @@
   <head>
     <meta charset="utf-8" />
     <title>yum&yum</title>
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="./grid.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
   </head>
 
   <body>
     <!--Grunn á þessu síða þannig við vitum hvar við erum. Breyta eins og þið viljið-->
     <div class="wrapper">
       <header>
+        <!--Basic nav, keep in mind the mobile version of this-->
         <nav>
-          <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./recipes.html">Recipes</a></li>
-            <li><a href="./videos.html">Videos</a></li>
-            <li><a href="./about.html">About us</a></li>
+          <div>
+            <a href="../index.html">
+              <img src="../myndir/yumYumLogo.png" alt="" />
+            </a>
+            <img
+              class="hamburger-icon"
+              id="hamburger"
+              src="../icons/burger-menu.png"
+              onclick="toggleMenu()"
+            />
+            <img
+              class="cross-icon"
+              id="cross"
+              src="../icons/cross.png"
+              onclick="toggleMenu()"
+            />
+          </div>
+          <ul class="menu" id="menu">
+            <li class="hamburger"><a href="../index.html">Home</a></li>
+            <li class="hamburger"><a href="./recipes.html">Recipes</a></li>
+            <li class="hamburger"><a href="./videos.html">Videos</a></li>
+            <li class="hamburger"><a href="./about.html">About us</a></li>
           </ul>
         </nav>
-        <h1>About. Hvað á að gerast hér?</h1>
       </header>
       <main>
-        <img src="../myndir/cat.png" alt="image of a peculiar cat" />
-        <img src="../myndir/cat.png" alt="image of a peculiar cat" />
-        <p>Empty for now...</p>
+        <div class="title">
+          <div class="titleflex">
+            <h1>About us</h1>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <img src="../myndir/cat/shocked-car.webp" alt="" />
+            <div class="infobox">
+              <p class="month">Axel</p>
+              <div>
+                <h3>Shocked car</h3>
+              </div>
+            </div>
+          </div>          
+          <div class="card">
+            <img src="../myndir/cat/sad-car.webp" alt="" />
+            <div class="infobox">
+              <p class="month">Guðmundur</p>
+              <div>
+                <h3>Sad car</h3>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="../myndir/cat/angry-car.jpeg" alt="" />
+            <div class="infobox">
+              <p class="month">Ignas</p>
+              <div>
+                <h3>Angry car</h3>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="../myndir/cat/silly-car.jpg" alt="" />
+            <div class="infobox">
+              <p class="month">Joseph</p>
+              <div>
+                <h3>Silly car</h3>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
 
       <footer>
         <!--efni-->
       </footer>
     </div>
+    <script src="../../scripts/scripts.js"></script>
   </body>
 </html>

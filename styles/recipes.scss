@@ -1,0 +1,36 @@
+@media (min-width: 700px) {
+    .recipe-container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+
+        h2, .text, p {
+            padding: 0;
+        }
+
+        h2 {
+           font-size: 40px; 
+           padding-top: 5rem;
+           padding-bottom: var(--spacing-double);
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .yet-another-ingredients-box {
+        display: flex;
+        flex-direction: column;
+        gap: var(--gutter);
+
+    }
+
+    .ingredients-container {
+        grid-column: span 4;
+    }
+
+    .method-container {
+        grid-column: span 8;
+    }
+}
+

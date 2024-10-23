@@ -69,6 +69,13 @@ a {
   color: var(--color-beige);
 }
 
+.put-button-in-middle {
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-double) 0;
+  background-color: var(--color-light-grey);
+}
+
 .button {
   text-align: center;
   border: var(--color-beige) 1px solid;
@@ -91,8 +98,33 @@ a {
 }
 
 .bottom-button {
+  background-color: var(--color-light-grey);
   padding: 4rem 0;
   text-align: center;
+}
+
+.line-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-light-grey);
+}
+@media (min-width: 700px) {
+  .line-container .button, .line-container .bottom-button {
+    margin: 0rem 3rem;
+  }
+}
+
+.line {
+  flex-grow: 1;
+  height: 1px;
+  border: none;
+  background-color: var(--color-grey);
+}
+@media (max-width: 699px) {
+  .line {
+    display: none;
+  }
 }
 
 /* "reset" sem fjarlægir default margin og padding af öllu */
@@ -101,12 +133,47 @@ a {
   padding: 0;
 }
 
+.cards {
+  background: linear-gradient(to bottom, white 10%, var(--color-light-grey) 10%);
+}
+@media (min-width: 700px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--gutter);
+  }
+}
+
 .card {
   background-color: white;
-  margin-top: var(--spacing);
-  margin-right: var(--spacing);
-  margin-left: var(--spacing);
-  max-width: 500px;
+  max-width: 100%;
+}
+@media (max-width: 699px) {
+  .card {
+    margin-top: var(--spacing);
+    margin-right: var(--spacing);
+    margin-left: var(--spacing);
+  }
+}
+@media (min-width: 700px) {
+  .card {
+    grid-column: span 6;
+  }
+  .card h2 {
+    font-size: 22px;
+  }
+  .card p {
+    font-size: 14px;
+  }
+  .card a {
+    font-size: 16px;
+    text-align: right;
+  }
+}
+@media (min-width: 1000px) {
+  .card {
+    grid-column: span 4;
+  }
 }
 .card img {
   height: 206px;
@@ -157,10 +224,6 @@ a {
 
 .still-video:hover .overlay {
   opacity: 1;
-}
-
-.cards {
-  background: linear-gradient(to bottom, white 10%, var(--color-light-grey) 10%);
 }
 
 @font-face {
@@ -334,6 +397,24 @@ textarea {
 .title .titleflex .secondaryTitle {
   color: black;
 }
+@media (min-width: 700px) {
+  .title p {
+    display: block;
+    text-align: left;
+    font-size: 16px;
+  }
+  .title .phone {
+    display: none;
+  }
+  .title .titleflex {
+    justify-content: left;
+    padding-bottom: var(--spacing);
+  }
+  .title .titleflex h2 {
+    font-size: 40px;
+    padding-right: 0.3rem;
+  }
+}
 
 .level {
   padding: 0 var(--spacing-double);
@@ -368,20 +449,25 @@ header {
   z-index: 1000;
   top: 0;
   position: sticky;
+  width: 100vw;
 }
+
 header nav {
   width: 100%;
 }
+
 header nav div {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 header nav img {
   max-width: 90px;
   margin: var(--spacing);
 }
-header nav .menu {
+
+.menu {
   display: none;
   flex-direction: column;
   list-style: none;
@@ -389,18 +475,25 @@ header nav .menu {
   width: 100%;
   text-align: center;
   height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
 }
-header nav .hamburger {
+
+.hamburger {
   border-bottom: 2px solid var(--color-faded-beige);
   padding: var(--spacing);
 }
-header nav .hamburger a {
+
+.hamburger a {
   font-size: 60px;
   font-family: var(--font-family-playfair);
   color: black;
   text-decoration: none;
 }
-header nav .hamburger-icon, header nav .cross-icon {
+
+.hamburger-icon, .cross-icon {
   max-height: 13px;
   cursor: pointer;
   opacity: 1;
@@ -409,13 +502,63 @@ header nav .hamburger-icon, header nav .cross-icon {
   right: 0px;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
-header nav .cross-icon {
+
+.cross-icon {
   opacity: 0;
   visibility: hidden;
 }
 
+.navtext {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  header nav div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: var(--spacing);
+    margin-right: var(--spacing);
+  }
+  .hamburger {
+    display: none;
+  }
+  .menu {
+    display: flex; /* Show the menu on larger screens */
+    justify-content: flex-end;
+    background-color: transparent;
+    height: auto;
+    list-style: none;
+  }
+  header nav img {
+    justify-content: left;
+  }
+  header {
+    background-color: white;
+    padding-top: var(--spacing);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100vw;
+  }
+  .hamburger-icon {
+    display: none;
+  }
+  .navtext {
+    display: flex;
+    gap: 20px;
+  }
+  .navtext a {
+    display: inline-block;
+    color: #000000;
+  }
+  header nav div a {
+    color: #000000;
+  }
+}
 .newsletter {
   background-color: #000000;
+  padding: var(--spacing);
   /*Makes newsletter stretch when needed */
   width: 100%;
 }
@@ -600,6 +743,7 @@ footer {
     row-gap: 0; /* <- ekkert lóðrétt bil milli containers */
     width: 100%;
     min-height: 100vh;
+    padding: 0 0;
     background-color: var(--color-light-grey);
   }
   .wrapper > * {
@@ -762,6 +906,34 @@ footer {
   text-align: justify;
 }
 
+@media (min-width: 700px) {
+  .recipe-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .recipe-container h2, .recipe-container .text, .recipe-container p {
+    padding: 0;
+  }
+  .recipe-container h2 {
+    font-size: 40px;
+    padding-top: 5rem;
+    padding-bottom: var(--spacing-double);
+  }
+  .recipe-container p {
+    font-size: 18px;
+  }
+  .yet-another-ingredients-box {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gutter);
+  }
+  .ingredients-container {
+    grid-column: span 4;
+  }
+  .method-container {
+    grid-column: span 8;
+  }
+}
 main {
   width: 100%;
 }
