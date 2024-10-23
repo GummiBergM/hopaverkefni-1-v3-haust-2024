@@ -1,31 +1,18 @@
 .book {
+  a {
+    color: var(--color-beige);
+    text-decoration: none;
+  }
 
-    text-align: center;
-    height: 543px;
-    background: linear-gradient(to bottom, var(--color-faded-beige) 75%, white 75%);
-    padding-left: var(--spacing);
-    padding-right: var(--spacing);
+  p {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    color: var(--color-dark-grey);
+    font-family: var(--font-family-poppins);
+  }
 
-    a {
-        color: var(--color-beige);
-        text-decoration: none;
-    }
-
-    p {
-        padding-top: 0.5rem;
-        padding-bottom: 1rem;
-        color: var(--color-dark-grey);
-        font-family: var(--font-family-poppins);
-    }
-
-    h2 {
-        font-size: 32px;
-        padding-top: 4rem;
-    }
-
-    img {
-        padding-top: 3rem;
-        height: auto;
-        width: 205px;
-    }
+  img {
+    padding-top: 3rem;
+    height: auto;
+  }
 }
