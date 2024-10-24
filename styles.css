@@ -73,7 +73,6 @@ a {
   display: flex;
   justify-content: center;
   padding: var(--spacing-double) 0;
-  background-color: var(--color-light-grey);
 }
 
 .button {
@@ -113,6 +112,11 @@ a {
 @media (min-width: 700px) {
   .line-container .button, .line-container .bottom-button {
     margin: 0rem 3rem;
+  }
+}
+@media (max-width: 699px) {
+  .line-container {
+    background-color: var(--color-light-grey);
   }
 }
 
@@ -376,6 +380,11 @@ textarea {
 .intro a {
   font-family: var(--font-family-poppins-bold);
 }
+@media (max-width: 699px) {
+  .intro .button {
+    margin-top: 100rem;
+  }
+}
 .intro .subtitle {
   color: var(--color-beige);
 }
@@ -512,7 +521,6 @@ header nav img {
   width: 100%;
   text-align: center;
   height: 100vh;
-  position: absolute;
   top: 0;
   left: 0;
   z-index: 999;

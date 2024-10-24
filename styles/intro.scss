@@ -25,6 +25,12 @@
     font-family: var(--font-family-poppins-bold);
   }
 
+  @media (max-width: 699px) {
+    .button {
+      margin-top: 100rem;
+    }
+  }
+
   .subtitle {
     color: var(--color-beige);
   }
