@@ -7,7 +7,7 @@
 
   @media (min-width: 700px) {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(var(--columns), 1fr);
     gap: var(--gutter);
   }
 }
