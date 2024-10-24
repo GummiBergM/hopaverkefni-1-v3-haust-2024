@@ -2,13 +2,12 @@
     display: flex;
     justify-content: center;
     padding: var(--spacing-double) 0;
-    background-color: var(--color-light-grey);
 }
 
 .button {
     text-align: center;
     border: var(--color-beige) 1px solid;
-    padding: 0.5rem 4rem;
+    padding: 0.8rem 4rem;
     transition: background-color var(--transition-time-short) ease, color var(--transition-time-short) ease;
     text-decoration: none;
     color: var(--color-beige);
@@ -34,7 +33,6 @@
 
 .bottom-button {
     padding: 4rem 0;
-    background-color: var(--color-light-grey);
     text-align: center;
     grid-column: span 12;
 }
@@ -43,7 +41,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-light-grey);
     max-width: 1300px;
     margin: 0 auto;
 
@@ -52,6 +49,10 @@
         .button, .bottom-button {
             margin: 0rem 3rem;
         }
+    }
+
+    @media (max-width: 699px) {
+        background-color: var(--color-light-grey);
     }
 }
 

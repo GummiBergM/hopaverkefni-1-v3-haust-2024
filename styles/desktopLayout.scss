@@ -24,7 +24,7 @@
 
     background-size: 850px;
     /** responsive bakgrunnur, miðað samt við 1600px**/
-    background-position: calc(50vw) -70px, calc(50vw - 100px) 125px;
+    background-position: calc(50vw) -69.5px, calc(50vw - 100px) 150px;
 
     /**This has the exact same grid as the wrapper**/
 
@@ -62,19 +62,21 @@
   }
 
   /*Book section*/
+.book-container {
+  /**cuts the beige color off at the 75% mark of div book, and makes the remaining 25% white **/
+  background: linear-gradient(
+    to bottom,
+    var(--color-faded-beige) 85%,
+    white 85%
+  );  
+}
+
   .book {
     /**This has the exact same grid as the wrapper**/
     display: grid;
     gap: var(--gutter);
     grid-template-columns: repeat(var(--columns), 1fr);
     grid-auto-rows: auto;
-
-    /**cuts the beige color off at the 75% mark of div book, and makes the remaining 25% white **/
-    background: linear-gradient(
-      to bottom,
-      var(--color-faded-beige) 85%,
-      white 85%
-    );
 
     /**beige color part is 670px, I will try to have the rest white **/
     height: 700px;

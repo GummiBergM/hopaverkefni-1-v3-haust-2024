@@ -1,43 +1,43 @@
-@import './styles/config';
-@import './styles/button';
-@import './styles/reset';
-@import './styles/card';
-@import './styles/text';
-@import './styles/mobileLayout';
-@import './styles/intro';
-@import './styles/main';
-@import './styles/title';
-@import './styles/level';
-@import './styles/nav';
-@import './styles/footer';
-@import './styles/book';
-@import './styles/desktopLayout';
-@import './styles/ingredients';
-@import './styles/recipes';
+@import "./styles/config";
+@import "./styles/button";
+@import "./styles/reset";
+@import "./styles/card";
+@import "./styles/text";
+@import "./styles/mobileLayout";
+@import "./styles/intro";
+@import "./styles/main";
+@import "./styles/title";
+@import "./styles/level";
+@import "./styles/nav";
+@import "./styles/footer";
+@import "./styles/book";
+@import "./styles/desktopLayout";
+@import "./styles/ingredients";
+@import "./styles/recipes";
 
 main {
-    width: 100%;
-    opacity: 0;
-    animation: fadeIn 0.5s ease-in-out forwards;
+  width: 100%;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
 }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
 
-  .fade-in{
+@keyframes fadeIn {
+  from {
     opacity: 0;
-    transform: translateY(30px);  // Start a bit below its final position
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
   }
-  
-  // When scrolled into view, add this class with JS to trigger the animation
-  .fade-in.show {
+  to {
     opacity: 1;
-    transform: translateY(0);  // Move to final position
   }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px); // Start a bit below its final position
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+// When scrolled into view, add this class with JS to trigger the animation
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0); // Move to final position
+}
