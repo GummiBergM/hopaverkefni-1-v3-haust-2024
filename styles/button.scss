@@ -45,10 +45,9 @@
     justify-content: center;
     background-color: var(--color-light-grey);
     max-width: 1300px;
+    margin: 0 auto;
 
     @media (min-width: 700px) {
-
-        padding: 0 var(--spacing);
 
         .button, .bottom-button {
             margin: 0rem 3rem;

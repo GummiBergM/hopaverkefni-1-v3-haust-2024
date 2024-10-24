@@ -9,8 +9,9 @@
     max-width: 1300px;
     padding: 0 var(--spacing);
     display: grid;
-    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-template-columns: repeat(12, 1fr);
     gap: var(--gutter);
+    margin: 0 auto;
   }
 }
 
