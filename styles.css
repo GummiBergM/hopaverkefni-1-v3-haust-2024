@@ -271,13 +271,11 @@ h2 {
 
 .desktop {
   font-size: 18px;
-  color: #5E5B69;
   text-decoration: none;
 }
 
 .phone {
   font-size: 14px;
-  color: #e3cdb1;
   text-decoration: none;
 }
 
@@ -367,17 +365,6 @@ textarea {
   background-color: var(--color-light-grey);
   background-image: url("../myndir/pumpkinPie.png"), url("../myndir/shadow.png");
   background-repeat: no-repeat;
-  /**
-    img {
-        object-fit: cover;
-        max-width: 100vh;
-        width: 100%;
-
-        position: absolute;
-        top: 10px;
-        left: 50px;
-    }
-    **/
 }
 @media (min-width: 700px) {
   .intro {
@@ -392,6 +379,11 @@ textarea {
   color: var(--color-beige);
 }
 
+@media (min-width: 700px) {
+  .recipe-intro {
+    background-color: white;
+  }
+}
 .text {
   display: flex;
   flex-direction: column;
@@ -946,6 +938,7 @@ footer {
     grid-template-columns: repeat(var(--columns), 1fr);
     grid-auto-rows: auto;
     padding-bottom: 8rem;
+    background-color: white;
   }
   .recipe-container h2, .recipe-container .text, .recipe-container p {
     padding: 0;
