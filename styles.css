@@ -458,6 +458,26 @@ textarea {
     font-size: 40px;
     padding-right: 0.3rem;
   }
+  .title .check {
+    justify-content: space-between;
+    padding: 0 var(--spacing);
+    padding-bottom: var(--spacing);
+    display: flex;
+  }
+  .title .check h2 {
+    font-size: 40px;
+    padding-right: 0.3rem;
+    text-align: left;
+  }
+  .title .check div {
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+  }
+  .title .check div p {
+    color: black;
+    font-family: var(--font-family-) playfair;
+  }
 }
 
 .level {
