@@ -18,3 +18,29 @@
 main {
     width: 100%;
 }
+
+body {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .fade-in{
+    opacity: 0;
+    transform: translateY(30px);  // Start a bit below its final position
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  // When scrolled into view, add this class with JS to trigger the animation
+  .fade-in.show {
+    opacity: 1;
+    transform: translateY(0);  // Move to final position
+  }
