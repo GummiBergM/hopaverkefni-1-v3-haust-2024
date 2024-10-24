@@ -8,8 +8,11 @@
   }
 }
 
+.title-container {
+  background-color: white;
+}
+
 .intro {
-  background-color: var(--color-light-grey);
   background-image: url("../myndir/pumpkinPie.png"), url("../myndir/shadow.png");
   background-repeat: no-repeat;
 
