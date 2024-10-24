@@ -35,12 +35,26 @@
       justify-content: center;
       gap: 1.5rem;
     }
+  }
+
+    .intro-video {
+      /**720px miðað við að nav skal vera 80 samtals 800 px **/
+      height: 720px;
+      
+      .intro-sub {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5rem;
+      }
+    }
+    
 
     /** text **/
     h1 {
       font-size: 60px;
     }
-  }
+  
 
   /**Children of intro **/
   .intro > * {

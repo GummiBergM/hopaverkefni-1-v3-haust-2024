@@ -409,6 +409,49 @@ textarea {
     background-color: white;
   }
 }
+.intro-video {
+  background-color: var(--color-light-grey);
+  background-image: linear-gradient(to right, rgb(0, 0, 0) 30%, rgba(0, 0, 0, 0) 100%), url("../myndir/bananaCake.png"), url("../myndir/shadow.png");
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensures the background images cover the container */
+}
+@media (min-width: 700px) {
+  .intro-video {
+    background-color: transparent;
+  }
+}
+.intro-video p,
+.intro-video a {
+  font-family: var(--font-family-poppins-bold);
+  color: var(--color-beige);
+}
+.intro-video h1 {
+  color: white;
+}
+.intro-video .subtitle {
+  color: var(--color-beige);
+}
+@media (min-width: 700px) {
+  .intro-video .intro-width {
+    padding: 0 var(--spacing);
+    padding-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 100vw;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  .intro-video .intro-width .intro-sub {
+    grid-column: span 7;
+  }
+}
+
+@media (min-width: 700px) {
+  .recipe-intro {
+    background-color: white;
+  }
+}
 .text {
   display: flex;
   flex-direction: column;
@@ -505,6 +548,17 @@ textarea {
   font-size: 15px;
   text-align: left;
   padding: 0 var(--spacing-double);
+}
+
+.level-text-video {
+  display: flex;
+  gap: 4px;
+}
+.level-text-video p {
+  color: white;
+}
+.level-text-video .level-black {
+  color: white;
 }
 
 header {
@@ -831,7 +885,6 @@ footer {
     background-position: 50vw -69.5px, calc(50vw - 100px) 150px;
     /**This has the exact same grid as the wrapper**/
     /**This is to center the intro vertically and controls spacing**/
-    /** text **/
   }
   .intro .intro-sub {
     display: flex;
@@ -839,7 +892,18 @@ footer {
     justify-content: center;
     gap: 1.5rem;
   }
-  .intro h1 {
+  .intro-video {
+    /**720px miðað við að nav skal vera 80 samtals 800 px **/
+    height: 720px;
+  }
+  .intro-video .intro-sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  /** text **/
+  h1 {
     font-size: 60px;
   }
   /**Children of intro **/
