@@ -1,68 +1,68 @@
-.put-button-in-middle{
-    display: flex;
-    justify-content: center;
-    padding: var(--spacing-double) 0;
+.put-button-in-middle {
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-double) 0;
 }
 
 .button {
-    text-align: center;
-    border: var(--color-beige) 1px solid;
-    padding: 0.8rem 4rem;
-    transition: background-color var(--transition-time-short) ease, color var(--transition-time-short) ease;
-    text-decoration: none;
+  text-align: center;
+  border: var(--color-beige) 1px solid;
+  padding: 0.8rem 4rem;
+  transition: background-color var(--transition-time-short) ease,
+    color var(--transition-time-short) ease;
+  text-decoration: none;
+  color: var(--color-beige);
+
+  @media (min-width: 700px) {
+  }
+
+  a {
     color: var(--color-beige);
-
-    @media (min-width: 700px) {
-
-    }
-
-    a {
-        color: var(--color-beige);
-        text-decoration: none;
-    }
+    text-decoration: none;
+  }
 }
 
 .button:hover {
-    background-color: var(--color-beige);
-    color: var(--color-light-grey);
+  background-color: var(--color-beige);
+  color: var(--color-light-grey);
 
-    a {
-        color: var(--color-light-grey);
-    }
+  a {
+    color: var(--color-light-grey);
+  }
 }
 
 .bottom-button {
-    padding: 4rem 0;
-    text-align: center;
-    grid-column: span 12;
+  padding: 4rem 0;
+  text-align: center;
+  grid-column: span 12;
 }
 
 .line-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 1300px;
-    margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1300px;
+  margin: 0 auto;
 
-    @media (min-width: 700px) {
-
-        .button, .bottom-button {
-            margin: 0rem 3rem;
-        }
+  @media (min-width: 700px) {
+    .button,
+    .bottom-button {
+      margin: 0rem 3rem;
     }
+  }
 
-    @media (max-width: 699px) {
-        background-color: var(--color-light-grey);
-    }
+  @media (max-width: 699px) {
+    background-color: var(--color-light-grey);
+  }
 }
 
 .line {
-    flex-grow: 1;
-    height: 1px;
-    border: none;
-    background-color: var(--color-grey);
+  flex-grow: 1;
+  height: 1px;
+  border: none;
+  background-color: var(--color-grey);
 
-    @media (max-width: 699px) {
-        display: none;
-    }
+  @media (max-width: 699px) {
+    display: none;
+  }
 }

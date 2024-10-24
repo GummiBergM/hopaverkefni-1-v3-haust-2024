@@ -57,11 +57,11 @@ html {
   --transition-timing-function: ease-in-out;
   /* Litir */
   --color-beige: #e3cdb1;
-  --color-faded-beige: #F7F1EB;
-  --color-dark-grey: #5E5B69;
-  --color-grey: #D0D0D0;
-  --color-light-grey: #F6F6F6;
-  --color-even-lighter-grey: #FAFAFA;
+  --color-faded-beige: #f7f1eb;
+  --color-dark-grey: #5e5b69;
+  --color-grey: #d0d0d0;
+  --color-light-grey: #f6f6f6;
+  --color-even-lighter-grey: #fafafa;
 }
 
 a {
@@ -79,7 +79,8 @@ a {
   text-align: center;
   border: var(--color-beige) 1px solid;
   padding: 0.8rem 4rem;
-  transition: background-color var(--transition-time-short) ease, color var(--transition-time-short) ease;
+  transition: background-color var(--transition-time-short) ease,
+    color var(--transition-time-short) ease;
   text-decoration: none;
   color: var(--color-beige);
 }
@@ -110,7 +111,8 @@ a {
   margin: 0 auto;
 }
 @media (min-width: 700px) {
-  .line-container .button, .line-container .bottom-button {
+  .line-container .button,
+  .line-container .bottom-button {
     margin: 0rem 3rem;
   }
 }
@@ -150,7 +152,11 @@ a {
 }
 
 .cards-container {
-  background: linear-gradient(to bottom, white 20%, var(--color-light-grey) 20%);
+  background: linear-gradient(
+    to bottom,
+    white 20%,
+    var(--color-light-grey) 20%
+  );
 }
 
 .card {
@@ -235,6 +241,15 @@ a {
   opacity: 1;
 }
 
+.card {
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
 @font-face {
   font-family: "Poppins";
   font-style: normal;
@@ -254,7 +269,8 @@ a {
   font-style: bold;
   font-weight: 700;
   font-display: swap;
-  src: url(../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf) format("woff2");
+  src: url(../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf)
+    format("woff2");
 }
 h1,
 h2,
@@ -307,7 +323,11 @@ textarea {
   }
   .book {
     /*cuts the beige color off at the 75% mark of div book, and makes the remaining 25% white */
-    background: linear-gradient(to bottom, var(--color-faded-beige) 75%, white 75%);
+    background: linear-gradient(
+      to bottom,
+      var(--color-faded-beige) 75%,
+      white 75%
+    );
     /*Padding I took from book.scss and transferred here as I don't think I need it in desktop-layout - Joseph*/
     padding-left: var(--spacing);
     padding-right: var(--spacing);
@@ -359,7 +379,11 @@ textarea {
 }
 @media (min-width: 700px) {
   .intro-gradient {
-    background: linear-gradient(to bottom, white 0%, var(--color-light-grey) 100%);
+    background: linear-gradient(
+      to bottom,
+      white 0%,
+      var(--color-light-grey) 100%
+    );
   }
 }
 
@@ -411,7 +435,12 @@ textarea {
 }
 .intro-video {
   background-color: var(--color-light-grey);
-  background-image: linear-gradient(to right, rgb(0, 0, 0) 30%, rgba(0, 0, 0, 0) 100%), url("../myndir/bananaCake.png"), url("../myndir/shadow.png");
+  background-image: linear-gradient(
+      to right,
+      rgb(0, 0, 0) 30%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url("../myndir/ingredients.png"), url("../myndir/shadow.png");
   background-repeat: no-repeat;
   background-size: cover; /* Ensures the background images cover the container */
 }
@@ -913,7 +942,11 @@ footer {
   /*Book section*/
   .book-container {
     /**cuts the beige color off at the 75% mark of div book, and makes the remaining 25% white **/
-    background: linear-gradient(to bottom, var(--color-faded-beige) 85%, white 85%);
+    background: linear-gradient(
+      to bottom,
+      var(--color-faded-beige) 85%,
+      white 85%
+    );
   }
   .book {
     /**This has the exact same grid as the wrapper**/
@@ -1063,7 +1096,9 @@ footer {
     grid-auto-rows: auto;
     padding-bottom: 8rem;
   }
-  .recipe-container h2, .recipe-container .text, .recipe-container p {
+  .recipe-container h2,
+  .recipe-container .text,
+  .recipe-container p {
     padding: 0;
   }
   .recipe-container h2 {
@@ -1109,7 +1144,8 @@ main {
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out,
+    box-shadow 0.3s ease;
 }
 
 .fade-in.show {
