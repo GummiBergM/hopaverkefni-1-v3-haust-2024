@@ -681,6 +681,10 @@ footer {
   margin: 0 10px;
 }
 
+.footer-img-effect:hover {
+  transform: translateY(-2px);
+}
+
 /* CSS */
 .button-27 {
   appearance: none;
