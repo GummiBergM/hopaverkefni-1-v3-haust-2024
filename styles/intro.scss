@@ -53,7 +53,7 @@
 .intro-video {
   background-color: var(--color-light-grey);
   background-image: 
-    linear-gradient(to right, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 100%), /* Black gradient that covers half */
+    linear-gradient(to right, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 100%), /* 30% solid black, 70% gradient */
     url("../myndir/bananaCake.png"), 
     url("../myndir/shadow.png");
   background-repeat: no-repeat;
@@ -66,11 +66,17 @@
   p,
   a {
     font-family: var(--font-family-poppins-bold);
+    color: var(--color-beige);
   }
 
+  h1{
+    color: white;
+  }
+  
   .subtitle {
     color: var(--color-beige);
   }
+  
 
   @media (min-width: 700px) {
     .intro-width {

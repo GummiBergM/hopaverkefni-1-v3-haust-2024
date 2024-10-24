@@ -35,32 +35,26 @@
       justify-content: center;
       gap: 1.5rem;
     }
+  }
 
     .intro-video {
       /**720px miðað við að nav skal vera 80 samtals 800 px **/
       height: 720px;
-  
-      background-size: 850px;
-      /** responsive bakgrunnur, miðað samt við 1600px**/
-      background-position: calc(50vw) -70px, calc(50vw - 100px) 125px;}
       
-  
-      /**This has the exact same grid as the wrapper**/
-  
-      /**This is to center the intro vertically and controls spacing**/
       .intro-sub {
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 1.5rem;
       }
+    }
     
 
     /** text **/
     h1 {
       font-size: 60px;
     }
-  }
+  
 
   /**Children of intro **/
   .intro > * {

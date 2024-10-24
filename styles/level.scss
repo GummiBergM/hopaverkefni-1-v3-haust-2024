@@ -28,3 +28,15 @@
     text-align: left;
     padding: 0 var(--spacing-double);
 }
+.level-text-video {
+    display: flex;
+    gap: 4px;
+
+    p {
+        color: white;
+    }
+
+    .level-black {
+        color: white;
+    }
+}

@@ -400,7 +400,7 @@ textarea {
 }
 .intro-video {
   background-color: var(--color-light-grey);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 100%), url("../myndir/bananaCake.png"), url("../myndir/shadow.png");
+  background-image: linear-gradient(to right, rgb(0, 0, 0) 30%, rgba(0, 0, 0, 0) 100%), url("../myndir/bananaCake.png"), url("../myndir/shadow.png");
   background-repeat: no-repeat;
   background-size: cover; /* Ensures the background images cover the container */
 }
@@ -412,6 +412,10 @@ textarea {
 .intro-video p,
 .intro-video a {
   font-family: var(--font-family-poppins-bold);
+  color: var(--color-beige);
+}
+.intro-video h1 {
+  color: white;
 }
 .intro-video .subtitle {
   color: var(--color-beige);
@@ -513,6 +517,17 @@ textarea {
   font-size: 15px;
   text-align: left;
   padding: 0 var(--spacing-double);
+}
+
+.level-text-video {
+  display: flex;
+  gap: 4px;
+}
+.level-text-video p {
+  color: white;
+}
+.level-text-video .level-black {
+  color: white;
 }
 
 header {
@@ -835,9 +850,6 @@ footer {
     background-position: 50vw -70px, calc(50vw - 100px) 125px;
     /**This has the exact same grid as the wrapper**/
     /**This is to center the intro vertically and controls spacing**/
-    /**This has the exact same grid as the wrapper**/
-    /**This is to center the intro vertically and controls spacing**/
-    /** text **/
   }
   .intro .intro-sub {
     display: flex;
@@ -845,20 +857,18 @@ footer {
     justify-content: center;
     gap: 1.5rem;
   }
-  .intro .intro-video {
+  .intro-video {
     /**720px miðað við að nav skal vera 80 samtals 800 px **/
     height: 720px;
-    background-size: 850px;
-    /** responsive bakgrunnur, miðað samt við 1600px**/
-    background-position: 50vw -70px, calc(50vw - 100px) 125px;
   }
-  .intro .intro-sub {
+  .intro-video .intro-sub {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1.5rem;
   }
-  .intro h1 {
+  /** text **/
+  h1 {
     font-size: 60px;
   }
   /**Children of intro **/
