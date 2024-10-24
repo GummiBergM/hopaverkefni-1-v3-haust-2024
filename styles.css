@@ -79,7 +79,7 @@ a {
 .button {
   text-align: center;
   border: var(--color-beige) 1px solid;
-  padding: 0.5rem 4rem;
+  padding: 0.8rem 4rem;
   transition: background-color var(--transition-time-short) ease, color var(--transition-time-short) ease;
   text-decoration: none;
   color: var(--color-beige);
