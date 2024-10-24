@@ -349,11 +349,16 @@ textarea {
     width: 80%;
   }
 }
+@media (min-width: 700px) {
+  .intro-gradient {
+    background: linear-gradient(to bottom, white 0%, var(--color-light-grey) 100%);
+  }
+}
+
 .intro {
   background-color: var(--color-light-grey);
   background-image: url("../myndir/pumpkinPie.png"), url("../myndir/shadow.png");
   background-repeat: no-repeat;
-  /*Removing this destroys responsiveness and adds an image... idk */
   /**
     img {
         object-fit: cover;
@@ -366,15 +371,17 @@ textarea {
     }
     **/
 }
+@media (min-width: 700px) {
+  .intro {
+    background-color: transparent;
+  }
+}
 .intro p,
 .intro a {
   font-family: var(--font-family-poppins-bold);
 }
 .intro .subtitle {
   color: var(--color-beige);
-}
-.intro img {
-  display: none;
 }
 
 .text {
@@ -463,6 +470,7 @@ header {
 
 header nav {
   width: 100%;
+  max-width: 1300px;
 }
 
 header nav div {
@@ -944,10 +952,26 @@ footer {
 }
 .ignas-prufa {
   display: flex;
+  margin: 10;
+  padding: 10;
 }
 
 main {
   width: 100%;
+}
+
+body {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

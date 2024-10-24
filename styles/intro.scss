@@ -1,9 +1,22 @@
+.intro-gradient {
+  @media (min-width: 700px) {
+    background: linear-gradient(
+      to bottom,
+      white 0%,
+      var(--color-light-grey) 100%
+    );
+  }
+}
+
 .intro {
   background-color: var(--color-light-grey);
-  background-image: 
-  url("../myndir/pumpkinPie.png"),
-  url("../myndir/shadow.png");
+  background-image: url("../myndir/pumpkinPie.png"), url("../myndir/shadow.png");
   background-repeat: no-repeat;
+
+  @media (min-width: 700px) {
+    background-color: transparent;
+  }
+
   p,
   a {
     font-family: var(--font-family-poppins-bold);
@@ -11,11 +24,6 @@
 
   .subtitle {
     color: var(--color-beige);
-  }
-
-  /*Removing this destroys responsiveness and adds an image... idk */
-  img {
-    display: none;
   }
 
   /**
