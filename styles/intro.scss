@@ -25,16 +25,10 @@
   .subtitle {
     color: var(--color-beige);
   }
+}
 
-  /**
-    img {
-        object-fit: cover;
-        max-width: 100vh;
-        width: 100%;
-
-        position: absolute;
-        top: 10px;
-        left: 50px;
-    }
-    **/
+@media (min-width: 700px) {
+  .recipe-intro {
+    background-color: white;
+  }
 }
