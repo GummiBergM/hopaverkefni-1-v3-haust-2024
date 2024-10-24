@@ -15,100 +15,111 @@
   </head>
 
   <body>
-    <!--Grunn á þessu síða þannig við vitum hvar við erum. Breyta eins og þið viljið-->
     <div class="wrapper">
       <header>
-      <nav>
-        <div>
-          <a href="../index.html">
-            <img src="../myndir/yumYumLogo.png" alt="" />
-          </a>
-          <img
-            class="hamburger-icon"
-            id="hamburger"
-            src="../icons/burger-menu.png"
-            onclick="toggleMenu()"
-          />
-          <img
-            class="cross-icon"
-            id="cross"
-            src="../icons/cross.png"
-            onclick="toggleMenu()"
-          />
-          <div class="navtext">
-            <a href="./recipes.html">Recipes</a>
-            <a href="./videos.html">Videos</a>
-            <a href="./about.html">About us</a>
-          </div>
-        </div>
-        <ul class="menu" id="menu">
-          <li class="hamburger"><a href="index.html">Home</a></li>
-          <li class="hamburger"><a href="./recipes.html">Recipes</a></li>
-          <li class="hamburger"><a href="./videos.html">Videos</a></li>
-          <li class="hamburger"><a href="./about.html">About us</a></li>
-        </ul>
-      </nav>
-    </header>      
-    <main>
-        <div class="title">
-          <div class="titleflex">
-            <h1>Meet the staff</h1>
-          </div>
-        </div>
-        <div class="cards">
-          <div class="card">
-            <img src="../myndir/cat/shocked-car.webp" alt="" />
-            <div class="infobox">
-              <p class="month">Axel</p>
-              <div>
-                <h3>Shocked car</h3>
-              </div>
+        <nav>
+          <div>
+            <a href="../index.html">
+              <img src="../myndir/yumYumLogo.png" alt="" />
+            </a>
+            <img
+              class="hamburger-icon"
+              id="hamburger"
+              src="../icons/burger-menu.png"
+              onclick="toggleMenu()"
+            />
+            <img
+              class="cross-icon"
+              id="cross"
+              src="../icons/cross.png"
+              onclick="toggleMenu()"
+            />
+            <div class="navtext">
+              <a href="./recipes.html">Recipes</a>
+              <a href="./videos.html">Videos</a>
+              <a href="./about.html">About us</a>
             </div>
           </div>
-          <div class="card">
-            <img src="../myndir/cat/sad-car.webp" alt="" />
-            <div class="infobox">
-              <p class="month">Guðmundur</p>
-              <div>
-                <h3>Sad car</h3>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img src="../myndir/cat/angry-car.jpeg" alt="" />
-            <div class="infobox">
-              <p class="month">Ignas</p>
-              <div>
-                <h3>Angry car</h3>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img src="../myndir/cat/silly-car.jpg" alt="" />
-            <div class="infobox">
-              <p class="month">Joseph</p>
-              <div>
-                <h3>Silly car</h3>
-              </div>
+          <ul class="menu" id="menu">
+            <li class="hamburger"><a href="index.html">Home</a></li>
+            <li class="hamburger"><a href="./recipes.html">Recipes</a></li>
+            <li class="hamburger"><a href="./videos.html">Videos</a></li>
+            <li class="hamburger"><a href="./about.html">About us</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="title-container">
+          <div class="title">
+            <div class="titleflex">
+              <h2>Meet the</h2>
+              <h2 class="secondaryTitle">staff</h2>
             </div>
           </div>
         </div>
-        <div class="title">
-          <div class="titleflex">
-            <h1>Emotional supporter</h1>
+        <div class="cards-container">
+          <div class="cards">
+            <div class="card">
+              <img src="../myndir/cat/shocked-car.webp" alt="" />
+              <div class="infobox">
+                <p class="month">Axel</p>
+                <div>
+                  <h3>Shocked car</h3>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="../myndir/cat/sad-car.webp" alt="" />
+              <div class="infobox">
+                <p class="month">Guðmundur</p>
+                <div>
+                  <h3>Sad car</h3>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="../myndir/cat/angry-car.jpeg" alt="" />
+              <div class="infobox">
+                <p class="month">Ignas</p>
+                <div>
+                  <h3>Angry car</h3>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="../myndir/cat/silly-car.jpg" alt="" />
+              <div class="infobox">
+                <p class="month">Joseph</p>
+                <div>
+                  <h3>Silly car</h3>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="cards">
-          <div class="card">
-            <img src="../myndir/cat/cool-car.jpg" alt="" />
-            <div class="infobox">
-              <p class="month">Jóhann</p>
-              <div>
-                <h3>Cool car</h3>
+          <br>
+          <div class="title-container">
+            <div class="title">
+              <div class="titleflex">
+                <h2>Emotional</h2>
+                <h2 class="secondaryTitle">supporter</h2>
               </div>
             </div>
           </div>
         </div>
+        <div class="cards-container">
+          <div class="cards">
+            <div class="card">
+              <img src="../myndir/cat/cool-car.jpg" alt="" />
+              <div class="infobox">
+                <p class="month">Jóhann</p>
+                <div>
+                  <h3>Cool car</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
       </main>
 
       <div id="newsletter" class="newsletter">
@@ -142,8 +153,8 @@
         <div class="footer-img">
           <img src="../icons/Facebook-Icon@2x.png" alt="Facebook logo" />
           <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">
-          <img src="../icons/YouTube-Icon.png" alt="YouTube logo" />
-           </a>
+            <img src="../icons/YouTube-Icon.png" alt="YouTube logo" />
+          </a>
           <img src="../icons/Twitter-Icon.png" alt="Twitter logo" />
         </div>
         <div class="footer-text2">

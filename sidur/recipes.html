@@ -17,274 +17,290 @@
   <body>
     <div class="wrapper">
       <header>
-      <nav>
-        <div>
-          <a href="../index.html">
-            <img src="../myndir/yumYumLogo.png" alt="" />
-          </a>
-          <img
-            class="hamburger-icon"
-            id="hamburger"
-            src="../icons/burger-menu.png"
-            onclick="toggleMenu()"
-          />
-          <img
-            class="cross-icon"
-            id="cross"
-            src="../icons/cross.png"
-            onclick="toggleMenu()"
-          />
-          <div class="navtext">
-            <a href="./recipes.html">Recipes</a>
-            <a href="./videos.html">Videos</a>
-            <a href="./about.html">About us</a>
+        <nav>
+          <div>
+            <a href="../index.html">
+              <img src="../myndir/yumYumLogo.png" alt="" />
+            </a>
+            <img
+              class="hamburger-icon"
+              id="hamburger"
+              src="../icons/burger-menu.png"
+              onclick="toggleMenu()"
+            />
+            <img
+              class="cross-icon"
+              id="cross"
+              src="../icons/cross.png"
+              onclick="toggleMenu()"
+            />
+            <div class="navtext">
+              <a href="./recipes.html">Recipes</a>
+              <a href="./videos.html">Videos</a>
+              <a href="./about.html">About us</a>
+            </div>
           </div>
-        </div>
-        <ul class="menu" id="menu">
-          <li class="hamburger"><a href="index.html">Home</a></li>
-          <li class="hamburger"><a href="./recipes.html">Recipes</a></li>
-          <li class="hamburger"><a href="./videos.html">Videos</a></li>
-          <li class="hamburger"><a href="./about.html">About us</a></li>
-        </ul>
-      </nav>
-    </header>
+          <ul class="menu" id="menu">
+            <li class="hamburger"><a href="index.html">Home</a></li>
+            <li class="hamburger"><a href="./recipes.html">Recipes</a></li>
+            <li class="hamburger"><a href="./videos.html">Videos</a></li>
+            <li class="hamburger"><a href="./about.html">About us</a></li>
+          </ul>
+        </nav>
+      </header>
 
       <main>
-        <div class="title">
-          <p>Get ready to get busy</p>
+        <div class="title-container">
+          <div class="title fade-in">
+            <div>
+              <p class="desktop">Get ready to get busy</p>
+              <p class="phone">All the news are here</p>
+            </div>
+            <div class="check">
+              <h2 class="secondaryTitle">All recipes</h2>
+              <div>
+                <input type="checkbox" />
+                <p>Only show video recipes</p>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div>
-          <div>
-            <h1>All recipes</h1>
-          </div>
+        <div class="cards-container">
+          <section class="cards">
+            <div class="card fade-in">
+              <img
+                src="../myndir/pumpkinPie.png"
+                alt="Pumpkin pie"
+                width="300px"
+              />
+              <div class="infobox">
+                <p class="month">September</p>
+                <div>
+                  <h2>Pumpkin pie</h2>
+                  <a class="desktop" href="./recipes/pumpkinPie-recipe.html"
+                    >Read more</a
+                  >
+                  <a class="phone" href="./recipes/pumpkinPie-recipe.html"
+                    >See</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card fade-in">
+              <img src="../myndir/MilkCookies.jpg" />
+              <div class="infobox">
+                <p class="month">September</p>
+                <div>
+                  <h2>Milk cookies</h2>
+                  <a class="desktop" href="#">Read more</a>
+                  <a class="phone" href="#">See</a>
+                </div>
+              </div>
+            </div>
+            <div class="card fade-in">
+              <img src="../myndir/cookies.png" />
+              <div class="infobox">
+                <p class="month">September</p>
+                <div>
+                  <h2>Almond cookies</h2>
+                  <a class="desktop" href="#">Read more</a>
+                  <a class="phone" href="#">See</a>
+                </div>
+              </div>
+            </div>
+            <div class="card fade-in">
+              <img src="../myndir/bananaCake.png" />
+              <div class="infobox">
+                <p class="month">September</p>
+                <div>
+                  <h2>Banana Cake</h2>
+                  <a class="desktop" href="#">Read more</a>
+                  <a class="phone" href="#">See</a>
+                </div>
+              </div>
+            </div>
+            <div class="card fade-in">
+              <img src="../myndir/laxSalad.png" alt="Lax salad" />
+              <div class="infobox">
+                <p class="month">September</p>
+                <div>
+                  <h3>Lax salad</h3>
+                  <a class="desktop" href="#">Read more</a>
+                  <a class="phone" href="#">See</a>
+                </div>
+              </div>
+            </div>
+            <div class="card fade-in">
+              <img src="../myndir/cubeCake.png" />
+              <div class="infobox">
+                <p class="month">September</p>
+                <div>
+                  <h2>Cube Cake</h2>
+                  <a class="desktop" href="#">Read more</a>
+                  <a class="phone" href="#">See</a>
+                </div>
+              </div>
+            </div>
 
-          <div class="ignas-prufa">
-            <input type="checkbox" />
-            <p>Only show video recipes</p>
-          </div>
+            <div class="card fade-in">
+              <img
+                src="../myndir/pumpkinPie.png"
+                alt="Pumpkin pie"
+                width="300px"
+              />
+              <div class="infobox">
+                <p class="month">September</p>
+                <div>
+                  <h3>Pumpkin pie</h3>
+                  <a class="desktop" href="./recipes/pumpkinPie-recipe.html"
+                    >Read more</a
+                  >
+                  <a class="phone" href="./recipes/pumpkinPie-recipe.html"
+                    >See</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card fade-in">
+              <img src="../myndir/MilkCookies.jpg" />
+              <div class="infobox">
+                <p class="month">September</p>
+                <div>
+                  <h2>Milk cookies</h2>
+                  <a class="desktop" href="#">Read more</a>
+                  <a class="phone" href="#">See</a>
+                </div>
+              </div>
+            </div>
+            <div class="card fade-in">
+              <img src="../myndir/cookies.png" />
+              <div class="infobox">
+                <p class="month">September</p>
+                <div>
+                  <h2>Almond cookies</h2>
+                  <a class="desktop" href="#">Read more</a>
+                  <a class="phone" href="#">See</a>
+                </div>
+              </div>
+            </div>
+            <div class="card fade-in">
+              <img src="../myndir/bananaCake.png" />
+              <div class="infobox">
+                <p class="month">September</p>
+                <div>
+                  <h2>Banana Cake</h2>
+                  <a class="desktop" href="#">Read more</a>
+                  <a class="phone" href="#">See</a>
+                </div>
+              </div>
+            </div>
+            <div class="card fade-in">
+              <img src="../myndir/laxSalad.png" alt="Lax salad" />
+              <div class="infobox">
+                <p class="month">September</p>
+                <div>
+                  <h3>Lax salad</h3>
+                  <a class="desktop" href="#">Read more</a>
+                  <a class="phone" href="#">See</a>
+                </div>
+              </div>
+            </div>
+            <div class="card fade-in">
+              <img src="../myndir/cubeCake.png" />
+              <div class="infobox">
+                <p class="month">September</p>
+                <div>
+                  <h2>Cube Cake</h2>
+                  <a class="desktop" href="#">Read more</a>
+                  <a class="phone" href="#">See</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card fade-in">
+              <img
+                src="../myndir/pumpkinPie.png"
+                alt="Pumpkin pie"
+                width="300px"
+              />
+              <div class="infobox">
+                <p class="month">September</p>
+                <div>
+                  <h3>Pumpkin pie</h3>
+                  <a class="desktop" href="./recipes/pumpkinPie-recipe.html"
+                    >Read more</a
+                  >
+                  <a class="phone" href="./recipes/pumpkinPie-recipe.html"
+                    >See</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card fade-in">
+              <img src="../myndir/MilkCookies.jpg" />
+              <div class="infobox">
+                <p class="month">September</p>
+                <div>
+                  <h2>Milk cookies</h2>
+                  <a class="desktop" href="#">Read more</a>
+                  <a class="phone" href="#">See</a>
+                </div>
+              </div>
+            </div>
+            <div class="card fade-in">
+              <img src="../myndir/cookies.png" />
+              <div class="infobox">
+                <p class="month">September</p>
+                <div>
+                  <h2>Almond cookies</h2>
+                  <a class="desktop" href="#">Read more</a>
+                  <a class="phone" href="#">See</a>
+                </div>
+              </div>
+            </div>
+            <div class="card fade-in">
+              <img src="../myndir/bananaCake.png" />
+              <div class="infobox">
+                <p class="month">September</p>
+                <div>
+                  <h2>Banana Cake</h2>
+                  <a class="desktop" href="#">Read more</a>
+                  <a class="phone" href="#">See</a>
+                </div>
+              </div>
+            </div>
+            <div class="card fade-in">
+              <img src="../myndir/laxSalad.png" alt="Lax salad" />
+              <div class="infobox">
+                <p class="month">September</p>
+                <div>
+                  <h3>Lax salad</h3>
+                  <a class="desktop" href="#">Read more</a>
+                  <a class="phone" href="#">See</a>
+                </div>
+              </div>
+            </div>
+            <div class="card fade-in">
+              <img src="../myndir/cubeCake.png" />
+              <div class="infobox">
+                <p class="month">September</p>
+                <div>
+                  <h2>Cube Cake</h2>
+                  <a class="desktop" href="#">Read more</a>
+                  <a class="phone" href="#">See</a>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
-
-        <section class="cards">
-          <div class="card">
-            <img
-              src="../myndir/pumpkinPie.png"
-              alt="Pumpkin pie"
-              width="300px"
-            />
-            <div class="infobox">
-              <p class="month">September</p>
-              <div>
-                <h2>Pumpkin pie</h2>
-                <a class="desktop" href="./recipes/pumpkinPie-recipe.html"
-                  >Read more</a
-                >
-                <a class="phone" href="./recipes/pumpkinPie-recipe.html">See</a>
-              </div>
-            </div>
+        <div class="line-container fade-in">
+          <hr class="line" />
+          <div class="put-button-in-middle">
+            <a class="button" href="#">See more</a>
           </div>
-          <div class="card">
-            <img src="../myndir/MilkCookies.jpg" />
-            <div class="infobox">
-              <p class="month">September</p>
-              <div>
-                <h2>Milk cookies</h2>
-                <a class="desktop" href="#">Read more</a>
-                <a class="phone" href="#">See</a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img src="../myndir/cookies.png" />
-            <div class="infobox">
-              <p class="month">September</p>
-              <div>
-                <h2>Almond cookies</h2>
-                <a class="desktop" href="#">Read more</a>
-                <a class="phone" href="#">See</a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img src="../myndir/bananaCake.png" />
-            <div class="infobox">
-              <p class="month">September</p>
-              <div>
-                <h2>Banana Cake</h2>
-                <a class="desktop" href="#">Read more</a>
-                <a class="phone" href="#">See</a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img src="../myndir/laxSalad.png" alt="Lax salad" />
-            <div class="infobox">
-              <p class="month">September</p>
-              <div>
-                <h3>Lax salad</h3>
-                <a class="desktop" href="#">Read more</a>
-                <a class="phone" href="#">See</a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img src="../myndir/cubeCake.png" />
-            <div class="infobox">
-              <p class="month">September</p>
-              <div>
-                <h2>Cube Cake</h2>
-                <a class="desktop" href="#">Read more</a>
-                <a class="phone" href="#">See</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <img
-              src="../myndir/pumpkinPie.png"
-              alt="Pumpkin pie"
-              width="300px"
-            />
-            <div class="infobox">
-              <p class="month">September</p>
-              <div>
-                <h3>Pumpkin pie</h3>
-                <a class="desktop" href="./recipes/pumpkinPie-recipe.html"
-                  >Read more</a
-                >
-                <a class="phone" href="./recipes/pumpkinPie-recipe.html">See</a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img src="../myndir/MilkCookies.jpg" />
-            <div class="infobox">
-              <p class="month">September</p>
-              <div>
-                <h2>Milk cookies</h2>
-                <a class="desktop" href="#">Read more</a>
-                <a class="phone" href="#">See</a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img src="../myndir/cookies.png" />
-            <div class="infobox">
-              <p class="month">September</p>
-              <div>
-                <h2>Almond cookies</h2>
-                <a class="desktop" href="#">Read more</a>
-                <a class="phone" href="#">See</a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img src="../myndir/bananaCake.png" />
-            <div class="infobox">
-              <p class="month">September</p>
-              <div>
-                <h2>Banana Cake</h2>
-                <a class="desktop" href="#">Read more</a>
-                <a class="phone" href="#">See</a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img src="../myndir/laxSalad.png" alt="Lax salad" />
-            <div class="infobox">
-              <p class="month">September</p>
-              <div>
-                <h3>Lax salad</h3>
-                <a class="desktop" href="#">Read more</a>
-                <a class="phone" href="#">See</a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img src="../myndir/cubeCake.png" />
-            <div class="infobox">
-              <p class="month">September</p>
-              <div>
-                <h2>Cube Cake</h2>
-                <a class="desktop" href="#">Read more</a>
-                <a class="phone" href="#">See</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <img
-              src="../myndir/pumpkinPie.png"
-              alt="Pumpkin pie"
-              width="300px"
-            />
-            <div class="infobox">
-              <p class="month">September</p>
-              <div>
-                <h3>Pumpkin pie</h3>
-                <a class="desktop" href="./recipes/pumpkinPie-recipe.html"
-                  >Read more</a
-                >
-                <a class="phone" href="./recipes/pumpkinPie-recipe.html">See</a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img src="../myndir/MilkCookies.jpg" />
-            <div class="infobox">
-              <p class="month">September</p>
-              <div>
-                <h2>Milk cookies</h2>
-                <a class="desktop" href="#">Read more</a>
-                <a class="phone" href="#">See</a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img src="../myndir/cookies.png" />
-            <div class="infobox">
-              <p class="month">September</p>
-              <div>
-                <h2>Almond cookies</h2>
-                <a class="desktop" href="#">Read more</a>
-                <a class="phone" href="#">See</a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img src="../myndir/bananaCake.png" />
-            <div class="infobox">
-              <p class="month">September</p>
-              <div>
-                <h2>Banana Cake</h2>
-                <a class="desktop" href="#">Read more</a>
-                <a class="phone" href="#">See</a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img src="../myndir/laxSalad.png" alt="Lax salad" />
-            <div class="infobox">
-              <p class="month">September</p>
-              <div>
-                <h3>Lax salad</h3>
-                <a class="desktop" href="#">Read more</a>
-                <a class="phone" href="#">See</a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img src="../myndir/cubeCake.png" />
-            <div class="infobox">
-              <p class="month">September</p>
-              <div>
-                <h2>Cube Cake</h2>
-                <a class="desktop" href="#">Read more</a>
-                <a class="phone" href="#">See</a>
-              </div>
-            </div>
-          </div>
-        </section>
+          <hr class="line" />
+        </div>
       </main>
 
       <div id="newsletter" class="newsletter">
