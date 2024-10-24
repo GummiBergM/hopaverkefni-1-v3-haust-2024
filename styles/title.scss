@@ -5,6 +5,9 @@
 
   display: grid;
 
+  max-width: 1300px;
+  margin: 0 auto;
+
   p {
     color: var(--color-beige);
     font-family: var(--font-family-poppins-bold);
