@@ -21,3 +21,21 @@ function toggleMenu() {
     cross.style.transition = "transform 0.3s ease-in-out, opacity 0.3s ease-in-out"; // Smooth transition
   }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const fadeElements = document.querySelectorAll('.fade-in');
+
+  function handleScroll() {
+    fadeElements.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top <= window.innerHeight - 50) { // Trigger slightly before the element is fully in view
+        el.classList.add('show');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', handleScroll);
+
+  // Trigger the function initially in case some elements are already in view on page load
+  handleScroll();
+});
