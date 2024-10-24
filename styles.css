@@ -113,7 +113,7 @@ a {
 }
 @media (min-width: 700px) {
   .line-container {
-    padding: 0 var(--spacing);
+    margin: 0 15rem;
   }
   .line-container .button, .line-container .bottom-button {
     margin: 0rem 3rem;
@@ -144,9 +144,9 @@ a {
 @media (min-width: 700px) {
   .cards {
     max-width: 1300px;
-    padding: 0 var(--spacing);
+    /*padding: 0 var(--spacing); */
     display: grid;
-    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--gutter);
   }
 }
@@ -179,7 +179,7 @@ a {
 }
 @media (min-width: 1000px) {
   .card {
-    grid-column: span 4;
+    grid-column: span 1;
   }
 }
 .card img {
@@ -402,6 +402,7 @@ textarea {
   text-align: center;
   background-color: white;
   padding-top: 2rem;
+  display: grid;
 }
 .title p {
   color: var(--color-beige);
@@ -893,6 +894,10 @@ footer {
   }
   .level .level-text {
     flex-direction: row;
+  }
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
   }
 }
 .ingredients-box h2 {
