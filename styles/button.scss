@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     padding: var(--spacing-double) 0;
-    background-color: var(--color-light-grey);
 }
 
 .button {
@@ -50,6 +49,10 @@
         .button, .bottom-button {
             margin: 0rem 3rem;
         }
+    }
+
+    @media (max-width: 699px) {
+        background-color: var(--color-light-grey);
     }
 }
 
