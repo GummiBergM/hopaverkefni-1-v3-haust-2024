@@ -1,9 +1,7 @@
-Hér er samantekt yfir verkefnamöppur og SCSS skrár í verkefninu samkvæmt upplýsingum þínum:
-
-### Mappur í verkefninu:
-- **fonts**: Geymir öll leturgerðir sem notaðar eru í verkefninu.
+### Möppur í verkefninu:
+- **fonts**: Geymir allar leturgerðir sem eru notaðar eru í verkefninu.
 - **icons**: Geymir táknmyndir (icons) eins og YouTube og Facebook tákn.
-- **myndir**: Geymir allar myndir sem notaðar eru í verkefninu.
+- **myndir**: Geymir allar myndir sem eru notaðar í verkefninu.
 - **scripts**: Inniheldur JavaScript skrár, m.a. fyrir `hamburger` valmyndina.
 - **sidur**: Geymir allar undirsíður fyrir utan `index.html`.
 - **styles**: Geymir öll SCSS skrár sem voru notaðar í verkefninu.
