@@ -34,7 +34,5 @@
 - **Joseph Lyler Páll Paraiso**
   - Email: iyler.paraiso@gmail.com
 
-Þetta yfirlit sýnir skipulag verkefnisins og hlutverk hverrar SCSS skráar, sem og upplýsingar um nemendurna sem vinna verkefnið.
-
 ![cat](https://github.com/user-attachments/assets/cafb3f61-0cf3-429b-ab4c-2cfa412ba069)
 
