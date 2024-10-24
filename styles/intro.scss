@@ -25,6 +25,23 @@
   .subtitle {
     color: var(--color-beige);
   }
+
+  @media (min-width: 700px) {
+    .intro-width {
+      padding: 0 var(--spacing);
+      padding-top: 10rem;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      width: 100vw;
+      align-items: center;
+      max-width: 1300px;
+      margin: 0 auto;
+
+      .intro-sub {
+        grid-column: span 7;
+      }
+    }
+  }
 }
 
 @media (min-width: 700px) {

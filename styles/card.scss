@@ -7,10 +7,11 @@
 
   @media (min-width: 700px) {
     max-width: 1300px;
-    /*padding: 0 var(--spacing); */
+    padding: 0 var(--spacing);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     gap: var(--gutter);
+    margin: 0 auto;
   }
 }
 
@@ -42,7 +43,7 @@
   }
 
   @media (min-width: 1000px) {
-    grid-column: span 1;
+    grid-column: span 4;
   }
 
   img {

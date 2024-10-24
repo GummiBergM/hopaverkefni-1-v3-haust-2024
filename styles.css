@@ -110,11 +110,9 @@ a {
   justify-content: center;
   background-color: var(--color-light-grey);
   max-width: 1300px;
+  margin: 0 auto;
 }
 @media (min-width: 700px) {
-  .line-container {
-    margin: 0 15rem;
-  }
   .line-container .button, .line-container .bottom-button {
     margin: 0rem 3rem;
   }
@@ -144,10 +142,11 @@ a {
 @media (min-width: 700px) {
   .cards {
     max-width: 1300px;
-    /*padding: 0 var(--spacing); */
+    padding: 0 var(--spacing);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     gap: var(--gutter);
+    margin: 0 auto;
   }
 }
 
@@ -179,7 +178,7 @@ a {
 }
 @media (min-width: 1000px) {
   .card {
-    grid-column: span 1;
+    grid-column: span 4;
   }
 }
 .card img {
@@ -378,6 +377,21 @@ textarea {
 .intro .subtitle {
   color: var(--color-beige);
 }
+@media (min-width: 700px) {
+  .intro .intro-width {
+    padding: 0 var(--spacing);
+    padding-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 100vw;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  .intro .intro-width .intro-sub {
+    grid-column: span 7;
+  }
+}
 
 @media (min-width: 700px) {
   .recipe-intro {
@@ -395,6 +409,8 @@ textarea {
   background-color: white;
   padding-top: 2rem;
   display: grid;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 .title p {
   color: var(--color-beige);
@@ -471,6 +487,7 @@ header {
 header nav {
   width: 100%;
   max-width: 1300px;
+  margin: 0 auto;
 }
 
 header nav div {
@@ -739,9 +756,9 @@ footer {
   justify-content: right;
 }
 
-.book a {
-  color: var(--color-beige);
-  text-decoration: none;
+.book {
+  max-width: 1300px;
+  margin: 0 auto;
 }
 .book p {
   padding-top: 0.5rem;
@@ -778,11 +795,6 @@ footer {
     /** responsive bakgrunnur, miðað samt við 1600px**/
     background-position: 50vw -70px, calc(50vw - 100px) 125px;
     /**This has the exact same grid as the wrapper**/
-    display: grid;
-    gap: var(--gutter);
-    grid-template-columns: repeat(var(--columns), 1fr);
-    grid-auto-rows: auto;
-    row-gap: 0;
     /**This is to center the intro vertically and controls spacing**/
     /** text **/
   }
@@ -891,10 +903,6 @@ footer {
   }
   .level .level-text {
     flex-direction: row;
-  }
-  .cards-container {
-    display: grid;
-    grid-template-columns: 1fr 10fr 1fr;
   }
 }
 .ingredients-box h2 {
