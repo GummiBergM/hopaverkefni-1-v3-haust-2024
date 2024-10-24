@@ -49,3 +49,49 @@
     background-color: white;
   }
 }
+
+.intro-video {
+  background-color: var(--color-light-grey);
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 100%), /* Black gradient that covers half */
+    url("../myndir/bananaCake.png"), 
+    url("../myndir/shadow.png");
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensures the background images cover the container */
+
+  @media (min-width: 700px) {
+    background-color: transparent;
+  }
+
+  p,
+  a {
+    font-family: var(--font-family-poppins-bold);
+  }
+
+  .subtitle {
+    color: var(--color-beige);
+  }
+
+  @media (min-width: 700px) {
+    .intro-width {
+      padding: 0 var(--spacing);
+      padding-top: 10rem;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      width: 100vw;
+      align-items: center;
+      max-width: 1300px;
+      margin: 0 auto;
+
+      .intro-sub {
+        grid-column: span 7;
+      }
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .recipe-intro {
+    background-color: white;
+  }
+}

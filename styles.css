@@ -398,6 +398,45 @@ textarea {
     background-color: white;
   }
 }
+.intro-video {
+  background-color: var(--color-light-grey);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 100%), url("../myndir/bananaCake.png"), url("../myndir/shadow.png");
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensures the background images cover the container */
+}
+@media (min-width: 700px) {
+  .intro-video {
+    background-color: transparent;
+  }
+}
+.intro-video p,
+.intro-video a {
+  font-family: var(--font-family-poppins-bold);
+}
+.intro-video .subtitle {
+  color: var(--color-beige);
+}
+@media (min-width: 700px) {
+  .intro-video .intro-width {
+    padding: 0 var(--spacing);
+    padding-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 100vw;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  .intro-video .intro-width .intro-sub {
+    grid-column: span 7;
+  }
+}
+
+@media (min-width: 700px) {
+  .recipe-intro {
+    background-color: white;
+  }
+}
 .text {
   display: flex;
   flex-direction: column;
@@ -796,7 +835,22 @@ footer {
     background-position: 50vw -70px, calc(50vw - 100px) 125px;
     /**This has the exact same grid as the wrapper**/
     /**This is to center the intro vertically and controls spacing**/
+    /**This has the exact same grid as the wrapper**/
+    /**This is to center the intro vertically and controls spacing**/
     /** text **/
+  }
+  .intro .intro-sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .intro .intro-video {
+    /**720px miðað við að nav skal vera 80 samtals 800 px **/
+    height: 720px;
+    background-size: 850px;
+    /** responsive bakgrunnur, miðað samt við 1600px**/
+    background-position: 50vw -70px, calc(50vw - 100px) 125px;
   }
   .intro .intro-sub {
     display: flex;
