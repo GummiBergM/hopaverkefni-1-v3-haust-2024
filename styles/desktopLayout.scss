@@ -37,24 +37,22 @@
     }
   }
 
-    .intro-video {
-      /**720px miðað við að nav skal vera 80 samtals 800 px **/
-      height: 720px;
-      
-      .intro-sub {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 1.5rem;
-      }
-    }
-    
+  .intro-video {
+    /**720px miðað við að nav skal vera 80 samtals 800 px **/
+    height: 720px;
 
-    /** text **/
-    h1 {
-      font-size: 60px;
+    .intro-sub {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1.5rem;
     }
-  
+  }
+
+  /** text **/
+  h1 {
+    font-size: 60px;
+  }
 
   /**Children of intro **/
   .intro > * {
@@ -62,14 +60,14 @@
   }
 
   /*Book section*/
-.book-container {
-  /**cuts the beige color off at the 75% mark of div book, and makes the remaining 25% white **/
-  background: linear-gradient(
-    to bottom,
-    var(--color-faded-beige) 85%,
-    white 85%
-  );  
-}
+  .book-container {
+    /**cuts the beige color off at the 75% mark of div book, and makes the remaining 25% white **/
+    background: linear-gradient(
+      to bottom,
+      var(--color-faded-beige) 85%,
+      white 85%
+    );
+  }
 
   .book {
     /**This has the exact same grid as the wrapper**/
@@ -132,7 +130,7 @@
   /**newsletter content sizing **/
   .newsletter-card h2 {
     /**Actual font size is 40px but with the way we have grid now it doesn't fit in it's container **/
-    font-size: 35px; 
+    font-size: 35px;
   }
   .newsletter-card p {
     font-size: var(--font-size-base);
@@ -143,7 +141,7 @@
   .newsletter-content-sub {
     height: 52px;
     max-width: 250px;
-    width: 100%
+    width: 100%;
   }
 
   /**Spacing **/

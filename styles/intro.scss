@@ -61,9 +61,12 @@
 
 .intro-video {
   background-color: var(--color-light-grey);
-  background-image: 
-    linear-gradient(to right, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 100%), /* 30% solid black, 70% gradient */
-    url("../myndir/bananaCake.png"), 
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1) 30%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    /* 30% solid black, 70% gradient */ url("../myndir/ingredients.png"),
     url("../myndir/shadow.png");
   background-repeat: no-repeat;
   background-size: cover; /* Ensures the background images cover the container */
@@ -78,14 +81,13 @@
     color: var(--color-beige);
   }
 
-  h1{
+  h1 {
     color: white;
   }
-  
+
   .subtitle {
     color: var(--color-beige);
   }
-  
 
   @media (min-width: 700px) {
     .intro-width {

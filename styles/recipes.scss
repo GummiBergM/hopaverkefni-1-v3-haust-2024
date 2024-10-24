@@ -1,55 +1,52 @@
 @media (min-width: 700px) {
-    .recipe-background {
-        background-color: white;
+  .recipe-background {
+    background-color: white;
+  }
+
+  .recipe-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    gap: var(--gutter);
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-auto-rows: auto;
+
+    padding-bottom: 8rem;
+
+    h2,
+    .text,
+    p {
+      padding: 0;
     }
 
-    .recipe-container {
-        max-width: 1300px;
-        margin: 0 auto;
-        display: grid;
-        gap: var(--gutter);
-        grid-template-columns: repeat(var(--columns), 1fr);
-        grid-auto-rows: auto;
-
-        padding-bottom: 8rem;
-
-
-        h2, .text, p {
-            padding: 0;
-        }
-
-        h2 {
-           font-size: 40px; 
-           padding-top: 5rem;
-           padding-bottom: var(--spacing-double);
-        }
-
-        p {
-            font-size: 18px;
-        }
+    h2 {
+      font-size: 40px;
+      padding-top: 5rem;
+      padding-bottom: var(--spacing-double);
     }
 
-    .yet-another-ingredients-box {
-        display: flex;
-        flex-direction: column;
-        gap: var(--gutter);
-
+    p {
+      font-size: 18px;
     }
+  }
 
-    .ingredients-container {
-        grid-column: 2 / 5;
-    }
+  .yet-another-ingredients-box {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gutter);
+  }
 
-    .method-container {
-        grid-column: 5 / 12;
-    }
+  .ingredients-container {
+    grid-column: 2 / 5;
+  }
+
+  .method-container {
+    grid-column: 5 / 12;
+  }
 }
 
 .ignas-prufa {
-    display: flex;
-    margin: 10;
-    padding: 10;
-    
+  display: flex;
+  margin: 10;
+  padding: 10;
 }
-
-

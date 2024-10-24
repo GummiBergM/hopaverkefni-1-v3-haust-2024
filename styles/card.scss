@@ -102,3 +102,12 @@
 .still-video:hover .overlay {
   opacity: 1;
 }
+
+.card {
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+}
